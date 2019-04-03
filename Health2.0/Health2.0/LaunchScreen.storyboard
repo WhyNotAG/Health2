@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scX-Xa-rBd" userLabel="ContentView">
+                                <rect key="frame" x="49" y="439" width="316" height="18"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qVc-NU-wJa">
+                                        <rect key="frame" x="148" y="81" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Здоровье 2.0 Red.png" translatesAutoresizingMaskIntoConstraints="NO" id="i5e-I5-YjN">
+                                        <rect key="frame" x="0.0" y="-9" width="316" height="36"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qVc-NU-wJa" firstAttribute="top" secondItem="i5e-I5-YjN" secondAttribute="bottom" constant="54" id="1PW-eC-j0n"/>
+                                    <constraint firstItem="qVc-NU-wJa" firstAttribute="leading" secondItem="scX-Xa-rBd" secondAttribute="leading" constant="148" id="39o-op-hJ0"/>
+                                    <constraint firstItem="qVc-NU-wJa" firstAttribute="centerX" secondItem="scX-Xa-rBd" secondAttribute="centerX" id="4Sz-eA-1dG"/>
+                                    <constraint firstItem="i5e-I5-YjN" firstAttribute="leading" secondItem="scX-Xa-rBd" secondAttribute="leading" id="Ho8-31-WYl"/>
+                                    <constraint firstItem="i5e-I5-YjN" firstAttribute="centerX" secondItem="scX-Xa-rBd" secondAttribute="centerX" id="XY4-Po-qwZ"/>
+                                    <constraint firstItem="i5e-I5-YjN" firstAttribute="top" secondItem="scX-Xa-rBd" secondAttribute="top" constant="-9" id="aT0-fG-BRy"/>
+                                    <constraint firstAttribute="trailing" secondItem="i5e-I5-YjN" secondAttribute="trailing" id="fqM-r7-gBR"/>
+                                    <constraint firstItem="i5e-I5-YjN" firstAttribute="centerY" secondItem="scX-Xa-rBd" secondAttribute="centerY" id="ueG-hj-qEd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="scX-Xa-rBd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Lbr-ab-HME"/>
+                            <constraint firstItem="scX-Xa-rBd" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pbr-9a-uX1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="374.18478260869568"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4yC-mu-dcF">
+            <objects>
+                <viewController id="58z-IA-jsJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yb7-r1-UD4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ALQ-bm-6Uf" userLabel="ContentView">
+                                <rect key="frame" x="29" y="356" width="356" height="184"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jX9-Aa-XGt">
+                                        <rect key="frame" x="148" y="81" width="60" height="20"/>
+                                    </activityIndicatorView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Здоровье 2.0.png" translatesAutoresizingMaskIntoConstraints="NO" id="gU0-he-FLR">
+                                        <rect key="frame" x="0.0" y="-9" width="356" height="39"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jX9-Aa-XGt" firstAttribute="centerX" secondItem="ALQ-bm-6Uf" secondAttribute="centerX" id="8sA-dV-leH"/>
+                                    <constraint firstAttribute="trailing" secondItem="gU0-he-FLR" secondAttribute="trailing" id="IZg-em-0Vw"/>
+                                    <constraint firstItem="jX9-Aa-XGt" firstAttribute="top" secondItem="ALQ-bm-6Uf" secondAttribute="top" constant="81" id="KP7-Kl-vdZ"/>
+                                    <constraint firstItem="gU0-he-FLR" firstAttribute="top" secondItem="ALQ-bm-6Uf" secondAttribute="top" constant="-9" id="Mhf-Yl-urF"/>
+                                    <constraint firstItem="jX9-Aa-XGt" firstAttribute="leading" secondItem="ALQ-bm-6Uf" secondAttribute="leading" constant="148" id="O6m-XI-Pa7"/>
+                                    <constraint firstItem="gU0-he-FLR" firstAttribute="leading" secondItem="ALQ-bm-6Uf" secondAttribute="leading" id="xu8-kY-ERK"/>
+                                    <constraint firstItem="jX9-Aa-XGt" firstAttribute="top" secondItem="gU0-he-FLR" secondAttribute="bottom" constant="51" id="z8D-gE-WiI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e73-jz-ISZ" firstAttribute="trailing" secondItem="ALQ-bm-6Uf" secondAttribute="trailing" constant="29" id="1GH-xY-j8R"/>
+                            <constraint firstItem="ALQ-bm-6Uf" firstAttribute="top" secondItem="e73-jz-ISZ" secondAttribute="top" constant="312" id="79x-iA-XYy"/>
+                            <constraint firstItem="ALQ-bm-6Uf" firstAttribute="centerY" secondItem="Yb7-r1-UD4" secondAttribute="centerY" id="9ku-7p-u0P"/>
+                            <constraint firstItem="ALQ-bm-6Uf" firstAttribute="leading" secondItem="e73-jz-ISZ" secondAttribute="leading" constant="29" id="WUE-9z-L4a"/>
+                            <constraint firstItem="ALQ-bm-6Uf" firstAttribute="centerY" secondItem="Yb7-r1-UD4" secondAttribute="centerY" id="eqd-ue-X8R"/>
+                            <constraint firstItem="ALQ-bm-6Uf" firstAttribute="centerX" secondItem="Yb7-r1-UD4" secondAttribute="centerX" id="k5g-3c-exf"/>
+                            <constraint firstItem="ALQ-bm-6Uf" firstAttribute="centerX" secondItem="Yb7-r1-UD4" secondAttribute="centerX" id="yK7-xY-Yiy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e73-jz-ISZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ajb-IB-LDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.275362318840585" y="1043.9732142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1xR-YV-a54">
+            <objects>
+                <viewController id="Vo3-re-oEO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H0T-cP-VCt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZfS-3M-fHh" userLabel="ContentView">
+                                <rect key="frame" x="29" y="356" width="356" height="184"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="xhH-Vf-ZQo">
+                                        <rect key="frame" x="148" y="81" width="60" height="20"/>
+                                    </activityIndicatorView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Здоровье 2.0 Dark.png" translatesAutoresizingMaskIntoConstraints="NO" id="UeQ-N5-t5O">
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="39"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UeQ-N5-t5O" firstAttribute="top" secondItem="ZfS-3M-fHh" secondAttribute="top" id="5D8-Qr-hka"/>
+                                    <constraint firstAttribute="trailing" secondItem="UeQ-N5-t5O" secondAttribute="trailing" id="7hU-Ka-0Wo"/>
+                                    <constraint firstItem="xhH-Vf-ZQo" firstAttribute="top" secondItem="UeQ-N5-t5O" secondAttribute="bottom" constant="42" id="FSS-5F-hHM"/>
+                                    <constraint firstItem="xhH-Vf-ZQo" firstAttribute="centerX" secondItem="ZfS-3M-fHh" secondAttribute="centerX" id="K5N-fP-VCb"/>
+                                    <constraint firstItem="UeQ-N5-t5O" firstAttribute="leading" secondItem="ZfS-3M-fHh" secondAttribute="leading" id="YWi-Oc-Qzj"/>
+                                    <constraint firstItem="xhH-Vf-ZQo" firstAttribute="leading" secondItem="ZfS-3M-fHh" secondAttribute="leading" constant="148" id="e7U-Kt-7f5"/>
+                                    <constraint firstItem="xhH-Vf-ZQo" firstAttribute="top" secondItem="ZfS-3M-fHh" secondAttribute="top" constant="81" id="yjF-yJ-7vh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZfS-3M-fHh" firstAttribute="centerX" secondItem="H0T-cP-VCt" secondAttribute="centerX" id="5EH-Si-THX"/>
+                            <constraint firstItem="ZfS-3M-fHh" firstAttribute="leading" secondItem="gHh-6s-ANl" secondAttribute="leading" constant="29" id="OS8-C8-L6a"/>
+                            <constraint firstItem="ZfS-3M-fHh" firstAttribute="centerY" secondItem="H0T-cP-VCt" secondAttribute="centerY" id="ffz-CC-ojW"/>
+                            <constraint firstItem="ZfS-3M-fHh" firstAttribute="top" secondItem="gHh-6s-ANl" secondAttribute="top" constant="312" id="s7G-6B-XbL"/>
+                            <constraint firstItem="gHh-6s-ANl" firstAttribute="trailing" secondItem="ZfS-3M-fHh" secondAttribute="trailing" constant="29" id="zKG-oo-c9M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gHh-6s-ANl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcE-3p-ZhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="1713"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Здоровье 2.0 Dark.png" width="275" height="36"/>
+        <image name="Здоровье 2.0 Red.png" width="276" height="36"/>
+        <image name="Здоровье 2.0.png" width="275" height="36"/>
+    </resources>
+</document>

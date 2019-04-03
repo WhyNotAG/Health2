@@ -41,5 +41,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>gotham_pro.ttf</string>
+		<string>gotham_pro_bold.ttf</string>
+	</array>
 </dict>
 </plist>
