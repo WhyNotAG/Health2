@@ -46,6 +46,19 @@
 		EEDD6A55225F6CAD007D5994 /* Water.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A54225F6CAD007D5994 /* Water.svg */; };
 		EEDD6A57225F6CC4007D5994 /* Banana.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A56225F6CC4007D5994 /* Banana.svg */; };
 		EEDD6A59225F7819007D5994 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A58225F7819007D5994 /* LaunchScreenViewController.swift */; };
+		EEDD6A5C225F86E4007D5994 /* OtherNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A5B225F86E4007D5994 /* OtherNotificationViewController.swift */; };
+		EEDD6A61225F888C007D5994 /* WhatsApp.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A60225F888C007D5994 /* WhatsApp.svg */; };
+		EEDD6A67225F88E6007D5994 /* Twitter.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A62225F88E5007D5994 /* Twitter.svg */; };
+		EEDD6A68225F88E6007D5994 /* Facebook.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A63225F88E6007D5994 /* Facebook.svg */; };
+		EEDD6A69225F88E6007D5994 /* Viber.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A64225F88E6007D5994 /* Viber.svg */; };
+		EEDD6A6A225F88E6007D5994 /* Vk.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A65225F88E6007D5994 /* Vk.svg */; };
+		EEDD6A6B225F88E6007D5994 /* Skype.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A66225F88E6007D5994 /* Skype.svg */; };
+		EEDD6A6E225F8EE3007D5994 /* ThemeSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A6D225F8EE3007D5994 /* ThemeSettingsViewController.swift */; };
+		EEDD6A70225F9AF0007D5994 /* HelpSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A6F225F9AF0007D5994 /* HelpSettingsViewController.swift */; };
+		EEDD6A73225F9BA2007D5994 /* Book.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A72225F9BA2007D5994 /* Book.svg */; };
+		EEDD6A75225F9C23007D5994 /* Phone.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A74225F9C22007D5994 /* Phone.svg */; };
+		EEDD6A77225F9C2D007D5994 /* Message.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A76225F9C2D007D5994 /* Message.svg */; };
+		EEDD6A79225F9C3E007D5994 /* Notification.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A78225F9C3E007D5994 /* Notification.svg */; };
 		EEE684F3224E4B7200849E5F /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE684F2224E4B7200849E5F /* AppSettingsViewController.swift */; };
 		EEE8D7F722523B7A00346166 /* indexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D7F622523B7A00346166 /* indexViewController.swift */; };
 		EEE8D7FD2253C85E00346166 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D7FC2253C85E00346166 /* DoctorViewController.swift */; };
@@ -97,6 +110,19 @@
 		EEDD6A54225F6CAD007D5994 /* Water.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Water.svg; sourceTree = "<group>"; };
 		EEDD6A56225F6CC4007D5994 /* Banana.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Banana.svg; sourceTree = "<group>"; };
 		EEDD6A58225F7819007D5994 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		EEDD6A5B225F86E4007D5994 /* OtherNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNotificationViewController.swift; sourceTree = "<group>"; };
+		EEDD6A60225F888C007D5994 /* WhatsApp.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WhatsApp.svg; sourceTree = "<group>"; };
+		EEDD6A62225F88E5007D5994 /* Twitter.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Twitter.svg; sourceTree = "<group>"; };
+		EEDD6A63225F88E6007D5994 /* Facebook.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Facebook.svg; sourceTree = "<group>"; };
+		EEDD6A64225F88E6007D5994 /* Viber.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Viber.svg; sourceTree = "<group>"; };
+		EEDD6A65225F88E6007D5994 /* Vk.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vk.svg; sourceTree = "<group>"; };
+		EEDD6A66225F88E6007D5994 /* Skype.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Skype.svg; sourceTree = "<group>"; };
+		EEDD6A6D225F8EE3007D5994 /* ThemeSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettingsViewController.swift; sourceTree = "<group>"; };
+		EEDD6A6F225F9AF0007D5994 /* HelpSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSettingsViewController.swift; sourceTree = "<group>"; };
+		EEDD6A72225F9BA2007D5994 /* Book.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Book.svg; sourceTree = "<group>"; };
+		EEDD6A74225F9C22007D5994 /* Phone.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phone.svg; sourceTree = "<group>"; };
+		EEDD6A76225F9C2D007D5994 /* Message.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Message.svg; sourceTree = "<group>"; };
+		EEDD6A78225F9C3E007D5994 /* Notification.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notification.svg; sourceTree = "<group>"; };
 		EEE684F2224E4B7200849E5F /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		EEE8D7F622523B7A00346166 /* indexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexViewController.swift; sourceTree = "<group>"; };
 		EEE8D7FC2253C85E00346166 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
@@ -170,8 +196,8 @@
 		EE51C0D7224CF58200914EF2 /* Health2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				EE3C2C93225B49AD00A46B55 /* SWRevealViewController */,
 				EE51C0D8224CF58200914EF2 /* AppDelegate.swift */,
+				EE3C2C93225B49AD00A46B55 /* SWRevealViewController */,
 				EEAD8130225CA9A000726629 /* SlideBarSettings */,
 				EEE7BCD92252175900A42E65 /* RegistrationAndStart */,
 				EEE7BCDA2252187300A42E65 /* HealthScreen */,
@@ -182,7 +208,6 @@
 				EE61CDC322560ECD0068726C /* CreatedElements */,
 				EE4394D22256008F00510A5D /* TrScreen */,
 				EE51C0DF224CF58300914EF2 /* Assets.xcassets */,
-				EEDD6A3B225F41E3007D5994 /* SVGImages */,
 				EE51C0FB224E1A9A00914EF2 /* LaunchScreen.storyboard */,
 				EEDD6A58225F7819007D5994 /* LaunchScreenViewController.swift */,
 				EE51C0F4224D42C000914EF2 /* Resources */,
@@ -194,6 +219,7 @@
 		EE51C0F4224D42C000914EF2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EEDD6A3B225F41E3007D5994 /* SVGImages */,
 				EE51C103224E245400914EF2 /* Здоровье 2.0 Red.png */,
 				EE51C0FF224E1EA400914EF2 /* Здоровье 2.0.png */,
 				EE51C101224E1FA600914EF2 /* Здоровье 2.0 Dark.png */,
@@ -218,8 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				EE6B98EE2257591E009977EF /* SlideViewController.swift */,
-				EEE684F2224E4B7200849E5F /* AppSettingsViewController.swift */,
-				EEAD8137225CF7EB00726629 /* BandSettingsViewController.swift */,
+				EEDD6A5A225F868C007D5994 /* AppSetings */,
+				EEDD6A6C225F8E9E007D5994 /* BandSettings */,
 			);
 			name = SlideBarSettings;
 			path = ..;
@@ -228,23 +254,84 @@
 		EEDD6A3B225F41E3007D5994 /* SVGImages */ = {
 			isa = PBXGroup;
 			children = (
-				EEDD6A3C225F423C007D5994 /* Settings.svg */,
+				EEDD6A71225F9B91007D5994 /* HelpSettings */,
+				EEDD6A5F225F8864007D5994 /* Messengers */,
+				EEDD6A5E225F8822007D5994 /* MainMenu */,
+				EEDD6A5D225F87E9007D5994 /* SideMenu */,
 				EEDD6A48225F54C3007D5994 /* Connected.svg */,
+				EE51C0F2224D361200914EF2 /* Vector.svg */,
+			);
+			path = SVGImages;
+			sourceTree = "<group>";
+		};
+		EEDD6A5A225F868C007D5994 /* AppSetings */ = {
+			isa = PBXGroup;
+			children = (
+				EEE684F2224E4B7200849E5F /* AppSettingsViewController.swift */,
+				EEDD6A6D225F8EE3007D5994 /* ThemeSettingsViewController.swift */,
+				EEDD6A6F225F9AF0007D5994 /* HelpSettingsViewController.swift */,
+			);
+			path = AppSetings;
+			sourceTree = "<group>";
+		};
+		EEDD6A5D225F87E9007D5994 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EEDD6A3C225F423C007D5994 /* Settings.svg */,
 				EEDD6A40225F4880007D5994 /* Avatar.svg */,
-				EEDD6A46225F4A30007D5994 /* Braselet.svg */,
-				EEDD6A4C225F678C007D5994 /* Card.svg */,
 				EEDD6A44225F4898007D5994 /* Sound.svg */,
+				EEDD6A3E225F4808007D5994 /* Support.svg */,
+				EEDD6A42225F488D007D5994 /* Search.svg */,
+				EEDD6A46225F4A30007D5994 /* Braselet.svg */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		EEDD6A5E225F8822007D5994 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EEDD6A4C225F678C007D5994 /* Card.svg */,
 				EEDD6A52225F6C92007D5994 /* Vibration.svg */,
 				EEDD6A56225F6CC4007D5994 /* Banana.svg */,
 				EEDD6A4E225F67DF007D5994 /* Calendar.svg */,
 				EEDD6A50225F6C7B007D5994 /* Lung.svg */,
 				EEDD6A54225F6CAD007D5994 /* Water.svg */,
 				EEDD6A4A225F6451007D5994 /* Doctor.svg */,
-				EEDD6A42225F488D007D5994 /* Search.svg */,
-				EEDD6A3E225F4808007D5994 /* Support.svg */,
-				EE51C0F2224D361200914EF2 /* Vector.svg */,
 			);
-			path = SVGImages;
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		EEDD6A5F225F8864007D5994 /* Messengers */ = {
+			isa = PBXGroup;
+			children = (
+				EEDD6A63225F88E6007D5994 /* Facebook.svg */,
+				EEDD6A66225F88E6007D5994 /* Skype.svg */,
+				EEDD6A62225F88E5007D5994 /* Twitter.svg */,
+				EEDD6A64225F88E6007D5994 /* Viber.svg */,
+				EEDD6A65225F88E6007D5994 /* Vk.svg */,
+				EEDD6A60225F888C007D5994 /* WhatsApp.svg */,
+			);
+			path = Messengers;
+			sourceTree = "<group>";
+		};
+		EEDD6A6C225F8E9E007D5994 /* BandSettings */ = {
+			isa = PBXGroup;
+			children = (
+				EEAD8137225CF7EB00726629 /* BandSettingsViewController.swift */,
+				EEDD6A5B225F86E4007D5994 /* OtherNotificationViewController.swift */,
+			);
+			path = BandSettings;
+			sourceTree = "<group>";
+		};
+		EEDD6A71225F9B91007D5994 /* HelpSettings */ = {
+			isa = PBXGroup;
+			children = (
+				EEDD6A78225F9C3E007D5994 /* Notification.svg */,
+				EEDD6A76225F9C2D007D5994 /* Message.svg */,
+				EEDD6A74225F9C22007D5994 /* Phone.svg */,
+				EEDD6A72225F9BA2007D5994 /* Book.svg */,
+			);
+			path = HelpSettings;
 			sourceTree = "<group>";
 		};
 		EEE7BCD92252175900A42E65 /* RegistrationAndStart */ = {
@@ -346,13 +433,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEDD6A43225F488D007D5994 /* Search.svg in Resources */,
+				EEDD6A75225F9C23007D5994 /* Phone.svg in Resources */,
 				EEDD6A4B225F6451007D5994 /* Doctor.svg in Resources */,
 				EE51C0F7224D431900914EF2 /* gotham_pro.ttf in Resources */,
 				EE51C0F3224D361200914EF2 /* Vector.svg in Resources */,
+				EEDD6A61225F888C007D5994 /* WhatsApp.svg in Resources */,
 				EEDD6A49225F54C3007D5994 /* Connected.svg in Resources */,
+				EEDD6A68225F88E6007D5994 /* Facebook.svg in Resources */,
 				EE51C0E0224CF58300914EF2 /* Assets.xcassets in Resources */,
 				EE51C0DE224CF58200914EF2 /* Main.storyboard in Resources */,
 				EEDD6A57225F6CC4007D5994 /* Banana.svg in Resources */,
+				EEDD6A79225F9C3E007D5994 /* Notification.svg in Resources */,
+				EEDD6A77225F9C2D007D5994 /* Message.svg in Resources */,
 				EEDD6A53225F6C92007D5994 /* Vibration.svg in Resources */,
 				EEDD6A4F225F67DF007D5994 /* Calendar.svg in Resources */,
 				EEDD6A45225F4899007D5994 /* Sound.svg in Resources */,
@@ -363,9 +455,14 @@
 				EE51C100224E1EA400914EF2 /* Здоровье 2.0.png in Resources */,
 				EEDD6A4D225F678C007D5994 /* Card.svg in Resources */,
 				EE51C0FA224E196000914EF2 /* Braselets.png in Resources */,
+				EEDD6A67225F88E6007D5994 /* Twitter.svg in Resources */,
 				EE51C0F8224D431900914EF2 /* gotham_pro_bold.ttf in Resources */,
 				EEDD6A51225F6C7B007D5994 /* Lung.svg in Resources */,
+				EEDD6A69225F88E6007D5994 /* Viber.svg in Resources */,
+				EEDD6A6B225F88E6007D5994 /* Skype.svg in Resources */,
+				EEDD6A73225F9BA2007D5994 /* Book.svg in Resources */,
 				EEDD6A47225F4A30007D5994 /* Braselet.svg in Resources */,
+				EEDD6A6A225F88E6007D5994 /* Vk.svg in Resources */,
 				EE51C102224E1FA600914EF2 /* Здоровье 2.0 Dark.png in Resources */,
 				EEDD6A3D225F423C007D5994 /* Settings.svg in Resources */,
 				EEDD6A41225F4880007D5994 /* Avatar.svg in Resources */,
@@ -429,6 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAD8138225CF7EB00726629 /* BandSettingsViewController.swift in Sources */,
+				EEDD6A6E225F8EE3007D5994 /* ThemeSettingsViewController.swift in Sources */,
 				EE3C2C92225B49A800A46B55 /* SWRevealViewController.m in Sources */,
 				EE5CF16C22566837002AB3CC /* IndicateViewController.swift in Sources */,
 				EE4394D4225600C600510A5D /* TrViewController.swift in Sources */,
@@ -439,11 +537,13 @@
 				EE51C0DB224CF58200914EF2 /* ViewController.swift in Sources */,
 				EE51C0D9224CF58200914EF2 /* AppDelegate.swift in Sources */,
 				EEAD812F225B6B6400726629 /* ConsultationViewController.swift in Sources */,
+				EEDD6A70225F9AF0007D5994 /* HelpSettingsViewController.swift in Sources */,
 				EE6B98EF2257591E009977EF /* SlideViewController.swift in Sources */,
 				EEE684F3224E4B7200849E5F /* AppSettingsViewController.swift in Sources */,
 				EE6B98F122576A08009977EF /* testViewController.swift in Sources */,
 				EE61CDC522560EF90068726C /* InfoSlider.swift in Sources */,
 				EEAD8134225CBA0000726629 /* CustomSegue.swift in Sources */,
+				EEDD6A5C225F86E4007D5994 /* OtherNotificationViewController.swift in Sources */,
 				EEE8D7FD2253C85E00346166 /* DoctorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
