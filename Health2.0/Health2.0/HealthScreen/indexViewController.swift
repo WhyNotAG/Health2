@@ -7,13 +7,15 @@
 //
 
 import UIKit
-
+import SideMenuSwift
 class indexViewController: UIViewController {
     
     //MARK:- indexOutlets
     @IBOutlet weak var indexInfoLabel: UILabel!
     @IBOutlet weak var doctorButton: UIButton!
+    @IBOutlet weak var menuButton: UIButton!
     
+    @IBOutlet weak var barbutton: UIBarButtonItem!
     //MARK:- progressOutlets
     @IBOutlet weak var progressView: UIView!
     @IBOutlet weak var progressBar: UIProgressView!
@@ -31,6 +33,12 @@ class indexViewController: UIViewController {
     //MARK: - button
     @IBOutlet weak var measureButton: UIButton!
     
+    @IBOutlet weak var slideMenu: UIView!
+    
+    @IBOutlet weak var trailing: NSLayoutConstraint!
+    @IBOutlet weak var leading: NSLayoutConstraint!
+    var hamburgerIsVisible = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,20 +52,17 @@ class indexViewController: UIViewController {
         
         progressBar.clipsToBounds = true
         progressBar.layer.cornerRadius = 5
-        
+
         
         //NavigationView
         connectedView.layer.cornerRadius = 15
-        
-        
-        //StatisticView
-        depletionView.layer.cornerRadius = 15
-        stressView.layer.cornerRadius = 15
-        energyView.layer.cornerRadius = 15
-        heartView.layer.cornerRadius = 15
-        
         measureButton.layer.cornerRadius = 20
-        
+        //sideMenuController?.hideMenu()
+    }
+    
+    @IBAction func openMenu(_ sender: Any) {
+        sideMenuController?.revealMenu()
+    
     }
     
 }

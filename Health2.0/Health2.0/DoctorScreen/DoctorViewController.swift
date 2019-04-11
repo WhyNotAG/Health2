@@ -10,7 +10,6 @@ import UIKit
 
 class DoctorViewController: UIViewController {
     
-    
     @IBOutlet weak var connectionView: UIView!
     
     @IBOutlet weak var doctorView: UIView!
@@ -26,15 +25,23 @@ class DoctorViewController: UIViewController {
         
         connectionView.layer.cornerRadius = 15
         
-        doctorView.layer.cornerRadius = 15
-        cardView.layer.cornerRadius = 15
-        calendarView.layer.cornerRadius = 15
-        
-        
         doctorLabel.text = "Консультация\nврача"
         cardLabel.text = "Медицинская\nкарта"
         calendarLabel.text = "Календарь\nконсультаций"
+        
+    }
     
+    @IBAction func openMenu(_ sender: Any) {
+        sideMenuController?.revealMenu()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated);
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
 

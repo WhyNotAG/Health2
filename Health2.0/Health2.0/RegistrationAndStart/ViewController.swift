@@ -14,6 +14,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var switch1Label: UILabel!
     @IBOutlet weak var switch2Label: UILabel!
     
+    @IBOutlet weak var testWebView: UIWebView!
+    
     @IBOutlet weak var button: UIButton!
     
     @IBOutlet weak var nameField: UITextField!
@@ -62,6 +64,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         attributedText.append(NSAttributedString(string: "2.0", attributes: [NSMutableAttributedString.Key.font:UIFont(name: "gotham_pro_bold", size: 19), NSMutableAttributedString.Key.foregroundColor: UIColor(red: 1, green: 0.32, blue: 0.22, alpha: 1)]))
         healthLabel.attributedText = attributedText
         healthLabel.font = UIFont(name: "gotham_pro_bold", size: 19)
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

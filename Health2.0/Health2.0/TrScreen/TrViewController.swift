@@ -1,16 +1,15 @@
 //
-//  IndicatorsViewController.swift
+//  TrViewController.swift
 //  Health2.0
 //
-//  Created by Александр Голубкин on 02/04/2019.
+//  Created by Александр Голубкин on 04/04/2019.
 //  Copyright © 2019 Александр Голубкин. All rights reserved.
 //
 
 import UIKit
 
-class IndicatorsViewController: UIViewController {
-    
-    //MARK:- Views
+class TrViewController: UIViewController {
+
     @IBOutlet weak var connectionView: UIView!
     @IBOutlet weak var calendarView: UIView!
     @IBOutlet weak var lungsView: UIView!
@@ -28,7 +27,7 @@ class IndicatorsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //Views
         connectionView.layer.cornerRadius = 15
         calendarView.layer.cornerRadius = 15
@@ -43,6 +42,10 @@ class IndicatorsViewController: UIViewController {
         vibrationLabel.text = "Вибрационная\nтерапия"
         waterLabel.text = "Гидротерапия"
         dietLabel.text = "Диета"
+    }
+    
+    @IBAction func openMenu(_ sender: Any) {
+        sideMenuController?.revealMenu()
     }
     
 }

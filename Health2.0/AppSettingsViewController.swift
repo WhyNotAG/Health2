@@ -10,20 +10,18 @@ import UIKit
 
 class AppSettingsViewController: UIViewController {
 
-    @IBOutlet weak var PlanesChoise: UILabel!
-    @IBOutlet weak var test: UIView?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        test?.layer.cornerRadius = 10
-        test?.layer.borderWidth = 0.5
-        //test?.layer.borderColor = UIColor.white.cgColor
-        test?.layer.masksToBounds = true;
-        test?.clipsToBounds = true
     }
     
-
-   
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+    }
+    
+    @IBAction func exit(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
 
 }
