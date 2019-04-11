@@ -25,6 +25,12 @@ class TrViewController: UIViewController {
     @IBOutlet weak var dietLabel: UILabel!
     
     
+    @IBOutlet weak var calendarImage: UIWebView!
+    @IBOutlet weak var lungsImage: UIWebView!
+    @IBOutlet weak var vibrationImage: UIWebView!
+    @IBOutlet weak var waterImage: UIWebView!
+    @IBOutlet weak var dietImage: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +48,20 @@ class TrViewController: UIViewController {
         vibrationLabel.text = "Вибрационная\nтерапия"
         waterLabel.text = "Гидротерапия"
         dietLabel.text = "Диета"
+        
+        //Images
+        calendarImage.loadRequest(addSVGImage(name: "Calendar") as URLRequest)
+        lungsImage.loadRequest(addSVGImage(name: "Lung") as URLRequest)
+        vibrationImage.loadRequest(addSVGImage(name: "Vibration") as URLRequest)
+        waterImage.loadRequest(addSVGImage(name: "Water") as URLRequest)
+        dietImage.loadRequest(addSVGImage(name: "Banana") as URLRequest)
+    }
+    
+    func addSVGImage(name: String) -> NSURLRequest {
+        let path: String = Bundle.main.path(forResource: name, ofType: "svg")!
+        let url: NSURL = NSURL.fileURL(withPath: path) as NSURL
+        let request: NSURLRequest = NSURLRequest(url: url as URL)
+        return request
     }
     
     @IBAction func openMenu(_ sender: Any) {

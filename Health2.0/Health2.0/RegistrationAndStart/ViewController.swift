@@ -57,7 +57,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         switch2Label.text = "Получать полезные\nинформационные материалы\nпо СМС"
         switch2Label.numberOfLines = 0
         
-        button.titleLabel?.font = UIFont(name: "gotham_pro_bold", size: 15)
         
         let attributedText = NSMutableAttributedString(string: "Здоровье ", attributes: [NSMutableAttributedString.Key.font:UIFont(name: "gotham_pro_bold", size: 19)])
         

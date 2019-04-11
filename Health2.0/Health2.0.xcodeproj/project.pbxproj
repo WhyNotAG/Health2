@@ -38,6 +38,14 @@
 		EEDD6A45225F4899007D5994 /* Sound.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A44225F4898007D5994 /* Sound.svg */; };
 		EEDD6A47225F4A30007D5994 /* Braselet.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A46225F4A30007D5994 /* Braselet.svg */; };
 		EEDD6A49225F54C3007D5994 /* Connected.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A48225F54C3007D5994 /* Connected.svg */; };
+		EEDD6A4B225F6451007D5994 /* Doctor.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A4A225F6451007D5994 /* Doctor.svg */; };
+		EEDD6A4D225F678C007D5994 /* Card.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A4C225F678C007D5994 /* Card.svg */; };
+		EEDD6A4F225F67DF007D5994 /* Calendar.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A4E225F67DF007D5994 /* Calendar.svg */; };
+		EEDD6A51225F6C7B007D5994 /* Lung.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A50225F6C7B007D5994 /* Lung.svg */; };
+		EEDD6A53225F6C92007D5994 /* Vibration.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A52225F6C92007D5994 /* Vibration.svg */; };
+		EEDD6A55225F6CAD007D5994 /* Water.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A54225F6CAD007D5994 /* Water.svg */; };
+		EEDD6A57225F6CC4007D5994 /* Banana.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A56225F6CC4007D5994 /* Banana.svg */; };
+		EEDD6A59225F7819007D5994 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A58225F7819007D5994 /* LaunchScreenViewController.swift */; };
 		EEE684F3224E4B7200849E5F /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE684F2224E4B7200849E5F /* AppSettingsViewController.swift */; };
 		EEE8D7F722523B7A00346166 /* indexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D7F622523B7A00346166 /* indexViewController.swift */; };
 		EEE8D7FD2253C85E00346166 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D7FC2253C85E00346166 /* DoctorViewController.swift */; };
@@ -81,6 +89,14 @@
 		EEDD6A44225F4898007D5994 /* Sound.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sound.svg; sourceTree = "<group>"; };
 		EEDD6A46225F4A30007D5994 /* Braselet.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Braselet.svg; sourceTree = "<group>"; };
 		EEDD6A48225F54C3007D5994 /* Connected.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Connected.svg; sourceTree = "<group>"; };
+		EEDD6A4A225F6451007D5994 /* Doctor.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doctor.svg; sourceTree = "<group>"; };
+		EEDD6A4C225F678C007D5994 /* Card.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Card.svg; sourceTree = "<group>"; };
+		EEDD6A4E225F67DF007D5994 /* Calendar.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Calendar.svg; sourceTree = "<group>"; };
+		EEDD6A50225F6C7B007D5994 /* Lung.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lung.svg; sourceTree = "<group>"; };
+		EEDD6A52225F6C92007D5994 /* Vibration.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Vibration.svg; sourceTree = "<group>"; };
+		EEDD6A54225F6CAD007D5994 /* Water.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Water.svg; sourceTree = "<group>"; };
+		EEDD6A56225F6CC4007D5994 /* Banana.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Banana.svg; sourceTree = "<group>"; };
+		EEDD6A58225F7819007D5994 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		EEE684F2224E4B7200849E5F /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		EEE8D7F622523B7A00346166 /* indexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexViewController.swift; sourceTree = "<group>"; };
 		EEE8D7FC2253C85E00346166 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +184,7 @@
 				EE51C0DF224CF58300914EF2 /* Assets.xcassets */,
 				EEDD6A3B225F41E3007D5994 /* SVGImages */,
 				EE51C0FB224E1A9A00914EF2 /* LaunchScreen.storyboard */,
+				EEDD6A58225F7819007D5994 /* LaunchScreenViewController.swift */,
 				EE51C0F4224D42C000914EF2 /* Resources */,
 				EE51C0E4224CF58300914EF2 /* Info.plist */,
 			);
@@ -215,7 +232,14 @@
 				EEDD6A48225F54C3007D5994 /* Connected.svg */,
 				EEDD6A40225F4880007D5994 /* Avatar.svg */,
 				EEDD6A46225F4A30007D5994 /* Braselet.svg */,
+				EEDD6A4C225F678C007D5994 /* Card.svg */,
 				EEDD6A44225F4898007D5994 /* Sound.svg */,
+				EEDD6A52225F6C92007D5994 /* Vibration.svg */,
+				EEDD6A56225F6CC4007D5994 /* Banana.svg */,
+				EEDD6A4E225F67DF007D5994 /* Calendar.svg */,
+				EEDD6A50225F6C7B007D5994 /* Lung.svg */,
+				EEDD6A54225F6CAD007D5994 /* Water.svg */,
+				EEDD6A4A225F6451007D5994 /* Doctor.svg */,
 				EEDD6A42225F488D007D5994 /* Search.svg */,
 				EEDD6A3E225F4808007D5994 /* Support.svg */,
 				EE51C0F2224D361200914EF2 /* Vector.svg */,
@@ -322,18 +346,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEDD6A43225F488D007D5994 /* Search.svg in Resources */,
+				EEDD6A4B225F6451007D5994 /* Doctor.svg in Resources */,
 				EE51C0F7224D431900914EF2 /* gotham_pro.ttf in Resources */,
 				EE51C0F3224D361200914EF2 /* Vector.svg in Resources */,
 				EEDD6A49225F54C3007D5994 /* Connected.svg in Resources */,
 				EE51C0E0224CF58300914EF2 /* Assets.xcassets in Resources */,
 				EE51C0DE224CF58200914EF2 /* Main.storyboard in Resources */,
+				EEDD6A57225F6CC4007D5994 /* Banana.svg in Resources */,
+				EEDD6A53225F6C92007D5994 /* Vibration.svg in Resources */,
+				EEDD6A4F225F67DF007D5994 /* Calendar.svg in Resources */,
 				EEDD6A45225F4899007D5994 /* Sound.svg in Resources */,
 				EE51C104224E245400914EF2 /* Здоровье 2.0 Red.png in Resources */,
+				EEDD6A55225F6CAD007D5994 /* Water.svg in Resources */,
 				EE51C0FC224E1A9A00914EF2 /* LaunchScreen.storyboard in Resources */,
 				EEDD6A3F225F4808007D5994 /* Support.svg in Resources */,
 				EE51C100224E1EA400914EF2 /* Здоровье 2.0.png in Resources */,
+				EEDD6A4D225F678C007D5994 /* Card.svg in Resources */,
 				EE51C0FA224E196000914EF2 /* Braselets.png in Resources */,
 				EE51C0F8224D431900914EF2 /* gotham_pro_bold.ttf in Resources */,
+				EEDD6A51225F6C7B007D5994 /* Lung.svg in Resources */,
 				EEDD6A47225F4A30007D5994 /* Braselet.svg in Resources */,
 				EE51C102224E1FA600914EF2 /* Здоровье 2.0 Dark.png in Resources */,
 				EEDD6A3D225F423C007D5994 /* Settings.svg in Resources */,
@@ -401,6 +432,7 @@
 				EE3C2C92225B49A800A46B55 /* SWRevealViewController.m in Sources */,
 				EE5CF16C22566837002AB3CC /* IndicateViewController.swift in Sources */,
 				EE4394D4225600C600510A5D /* TrViewController.swift in Sources */,
+				EEDD6A59225F7819007D5994 /* LaunchScreenViewController.swift in Sources */,
 				EEE8D7F722523B7A00346166 /* indexViewController.swift in Sources */,
 				EE4394DC22560A2600510A5D /* ButtonView.swift in Sources */,
 				EE51C0F1224D348F00914EF2 /* SearchViewController.swift in Sources */,
