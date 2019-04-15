@@ -59,9 +59,16 @@
 		EEDD6A75225F9C23007D5994 /* Phone.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A74225F9C22007D5994 /* Phone.svg */; };
 		EEDD6A77225F9C2D007D5994 /* Message.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A76225F9C2D007D5994 /* Message.svg */; };
 		EEDD6A79225F9C3E007D5994 /* Notification.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A78225F9C3E007D5994 /* Notification.svg */; };
+		EEDD6A7C22608DD7007D5994 /* MonitorngViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A7B22608DD7007D5994 /* MonitorngViewController.swift */; };
+		EEDD6A7E22609D20007D5994 /* PressureAndPulseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A7D22609D20007D5994 /* PressureAndPulseViewController.swift */; };
+		EEDD6A802260A3EE007D5994 /* IndexAndECGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A7F2260A3EE007D5994 /* IndexAndECGViewController.swift */; };
+		EEDD6A822260AA9D007D5994 /* ConnectHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A812260AA9D007D5994 /* ConnectHelpViewController.swift */; };
+		EEDD6A862260CC9B007D5994 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDD6A852260CC9B007D5994 /* CustomTextField.swift */; };
 		EEE684F3224E4B7200849E5F /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE684F2224E4B7200849E5F /* AppSettingsViewController.swift */; };
 		EEE8D7F722523B7A00346166 /* indexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D7F622523B7A00346166 /* indexViewController.swift */; };
 		EEE8D7FD2253C85E00346166 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D7FC2253C85E00346166 /* DoctorViewController.swift */; };
+		EEEC63462260CE5F00692DC9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEC63452260CE5F00692DC9 /* ProfileViewController.swift */; };
+		EEEC63492260E21500692DC9 /* SexMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEC63482260E21500692DC9 /* SexMenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,9 +130,16 @@
 		EEDD6A74225F9C22007D5994 /* Phone.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phone.svg; sourceTree = "<group>"; };
 		EEDD6A76225F9C2D007D5994 /* Message.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Message.svg; sourceTree = "<group>"; };
 		EEDD6A78225F9C3E007D5994 /* Notification.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notification.svg; sourceTree = "<group>"; };
+		EEDD6A7B22608DD7007D5994 /* MonitorngViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorngViewController.swift; sourceTree = "<group>"; };
+		EEDD6A7D22609D20007D5994 /* PressureAndPulseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressureAndPulseViewController.swift; sourceTree = "<group>"; };
+		EEDD6A7F2260A3EE007D5994 /* IndexAndECGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexAndECGViewController.swift; sourceTree = "<group>"; };
+		EEDD6A812260AA9D007D5994 /* ConnectHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectHelpViewController.swift; sourceTree = "<group>"; };
+		EEDD6A852260CC9B007D5994 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		EEE684F2224E4B7200849E5F /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		EEE8D7F622523B7A00346166 /* indexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = indexViewController.swift; sourceTree = "<group>"; };
 		EEE8D7FC2253C85E00346166 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
+		EEEC63452260CE5F00692DC9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EEEC63482260E21500692DC9 /* SexMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexMenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +250,7 @@
 				EE4394DB22560A2600510A5D /* ButtonView.swift */,
 				EE61CDC422560EF90068726C /* InfoSlider.swift */,
 				EEAD8133225CBA0000726629 /* CustomSegue.swift */,
+				EEDD6A852260CC9B007D5994 /* CustomTextField.swift */,
 			);
 			path = CreatedElements;
 			sourceTree = "<group>";
@@ -244,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				EE6B98EE2257591E009977EF /* SlideViewController.swift */,
+				EEEC63472260E1F800692DC9 /* ProfileScreen */,
 				EEDD6A5A225F868C007D5994 /* AppSetings */,
 				EEDD6A6C225F8E9E007D5994 /* BandSettings */,
 			);
@@ -267,9 +283,11 @@
 		EEDD6A5A225F868C007D5994 /* AppSetings */ = {
 			isa = PBXGroup;
 			children = (
+				EEDD6A7A22608DAF007D5994 /* Monitoring */,
 				EEE684F2224E4B7200849E5F /* AppSettingsViewController.swift */,
 				EEDD6A6D225F8EE3007D5994 /* ThemeSettingsViewController.swift */,
 				EEDD6A6F225F9AF0007D5994 /* HelpSettingsViewController.swift */,
+				EEDD6A812260AA9D007D5994 /* ConnectHelpViewController.swift */,
 			);
 			path = AppSetings;
 			sourceTree = "<group>";
@@ -334,6 +352,16 @@
 			path = HelpSettings;
 			sourceTree = "<group>";
 		};
+		EEDD6A7A22608DAF007D5994 /* Monitoring */ = {
+			isa = PBXGroup;
+			children = (
+				EEDD6A7B22608DD7007D5994 /* MonitorngViewController.swift */,
+				EEDD6A7D22609D20007D5994 /* PressureAndPulseViewController.swift */,
+				EEDD6A7F2260A3EE007D5994 /* IndexAndECGViewController.swift */,
+			);
+			path = Monitoring;
+			sourceTree = "<group>";
+		};
 		EEE7BCD92252175900A42E65 /* RegistrationAndStart */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +394,15 @@
 				EEAD812E225B6B6400726629 /* ConsultationViewController.swift */,
 			);
 			path = DoctorScreen;
+			sourceTree = "<group>";
+		};
+		EEEC63472260E1F800692DC9 /* ProfileScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EEEC63452260CE5F00692DC9 /* ProfileViewController.swift */,
+				EEEC63482260E21500692DC9 /* SexMenuViewController.swift */,
+			);
+			path = ProfileScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,22 +563,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEAD8138225CF7EB00726629 /* BandSettingsViewController.swift in Sources */,
+				EEDD6A7E22609D20007D5994 /* PressureAndPulseViewController.swift in Sources */,
 				EEDD6A6E225F8EE3007D5994 /* ThemeSettingsViewController.swift in Sources */,
+				EEEC63492260E21500692DC9 /* SexMenuViewController.swift in Sources */,
 				EE3C2C92225B49A800A46B55 /* SWRevealViewController.m in Sources */,
 				EE5CF16C22566837002AB3CC /* IndicateViewController.swift in Sources */,
 				EE4394D4225600C600510A5D /* TrViewController.swift in Sources */,
 				EEDD6A59225F7819007D5994 /* LaunchScreenViewController.swift in Sources */,
 				EEE8D7F722523B7A00346166 /* indexViewController.swift in Sources */,
 				EE4394DC22560A2600510A5D /* ButtonView.swift in Sources */,
+				EEDD6A862260CC9B007D5994 /* CustomTextField.swift in Sources */,
+				EEEC63462260CE5F00692DC9 /* ProfileViewController.swift in Sources */,
 				EE51C0F1224D348F00914EF2 /* SearchViewController.swift in Sources */,
 				EE51C0DB224CF58200914EF2 /* ViewController.swift in Sources */,
 				EE51C0D9224CF58200914EF2 /* AppDelegate.swift in Sources */,
 				EEAD812F225B6B6400726629 /* ConsultationViewController.swift in Sources */,
+				EEDD6A7C22608DD7007D5994 /* MonitorngViewController.swift in Sources */,
 				EEDD6A70225F9AF0007D5994 /* HelpSettingsViewController.swift in Sources */,
 				EE6B98EF2257591E009977EF /* SlideViewController.swift in Sources */,
 				EEE684F3224E4B7200849E5F /* AppSettingsViewController.swift in Sources */,
 				EE6B98F122576A08009977EF /* testViewController.swift in Sources */,
+				EEDD6A802260A3EE007D5994 /* IndexAndECGViewController.swift in Sources */,
 				EE61CDC522560EF90068726C /* InfoSlider.swift in Sources */,
+				EEDD6A822260AA9D007D5994 /* ConnectHelpViewController.swift in Sources */,
 				EEAD8134225CBA0000726629 /* CustomSegue.swift in Sources */,
 				EEDD6A5C225F86E4007D5994 /* OtherNotificationViewController.swift in Sources */,
 				EEE8D7FD2253C85E00346166 /* DoctorViewController.swift in Sources */,
