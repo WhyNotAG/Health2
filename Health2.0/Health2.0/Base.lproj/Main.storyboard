@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XFv-jf-ztd">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -64,6 +64,9 @@
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя пользователя " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mX0-jN-EDL">
                                                         <rect key="frame" x="16" y="89" width="207" height="14"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="207" id="aJl-9y-PDY"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -370,8 +373,10 @@
                     <navigationItem key="navigationItem" id="GUj-ch-zsu"/>
                     <connections>
                         <outlet property="bandImage" destination="lip-wH-tIf" id="Mcx-hu-DM2"/>
+                        <outlet property="emailLabel" destination="yvB-cv-800" id="feR-8a-c49"/>
                         <outlet property="exitButton" destination="xOF-i1-aqR" id="RX3-b3-m35"/>
                         <outlet property="findeImage" destination="XqB-g9-3ju" id="rCb-6G-Vhq"/>
+                        <outlet property="nameLabel" destination="mX0-jN-EDL" id="gUr-6g-ZxD"/>
                         <outlet property="newsImage" destination="u77-U0-rxh" id="hXw-Ts-g0G"/>
                         <outlet property="profileImage" destination="z2P-3x-OVy" id="H36-TO-xXW"/>
                         <outlet property="settingsImage" destination="enJ-rT-ZRa" id="W2s-rP-KGi"/>
@@ -382,6 +387,198 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIK-Bi-dai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3853.6231884057975" y="381.69642857142856"/>
+        </scene>
+        <!--Enter View Controller-->
+        <scene sceneID="tvg-F4-b5C">
+            <objects>
+                <viewController id="eRD-Ix-Eqo" customClass="EnterViewController" customModule="Health2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U8L-PH-Bfn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQH-k0-I0E">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jG0-xU-aso" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здоровье 2.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMq-7u-VTD">
+                                                <rect key="frame" x="0.0" y="14" width="414" height="16"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HtF-mp-Q3S">
+                                                <rect key="frame" x="0.0" y="67" width="414" height="27"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите email или телефон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fd3-cC-SOT">
+                                                <rect key="frame" x="16" y="129" width="382" height="14"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n34-pT-sNB" userLabel="Name" customClass="CustomTextField" customModule="Health2_0" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="148" width="382" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Akp-5N-Nz4"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Wgx-q9-k3q"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmq-CW-gbt">
+                                                <rect key="frame" x="16" y="233" width="382" height="14"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nlq-R9-QLO" userLabel="Name" customClass="CustomTextField" customModule="Health2_0" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="252" width="382" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="WIz-WN-H0H"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BGC-5I-O55"/>
+                                                </connections>
+                                            </textField>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ks9-h0-JO3">
+                                                <rect key="frame" x="16" y="341" width="187" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="187" id="63b-WV-qXH"/>
+                                                    <constraint firstAttribute="height" constant="30" id="NUm-dS-pTO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
+                                                <state key="normal" title="Забыли пароль">
+                                                    <color key="titleColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0g-fI-OcU">
+                                                <rect key="frame" x="215" y="341" width="187" height="30"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
+                                                <state key="normal" title="Создать аккаунт">
+                                                    <color key="titleColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="tQB-HE-k0k"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtH-mI-6Ye">
+                                                <rect key="frame" x="16" y="406" width="382" height="48"/>
+                                                <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Nec-hf-rsS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Вход в аккаунт"/>
+                                                <connections>
+                                                    <action selector="enter:" destination="eRD-Ix-Eqo" eventType="touchUpInside" id="gne-rh-3IH"/>
+                                                    <segue destination="srl-bq-ijf" kind="show" identifier="segueEnter" id="zIL-hI-S5H"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPO-R8-PHn">
+                                                <rect key="frame" x="135" y="717" width="263" height="48"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="2K7-1x-F8M"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="263" id="ePv-zI-0lf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                <color key="tintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Пропустить регистрацию">
+                                                    <color key="titleColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="freeEnter:" destination="eRD-Ix-Eqo" eventType="touchUpInside" id="Xss-0Q-vSp"/>
+                                                    <segue destination="srl-bq-ijf" kind="show" id="2pW-gI-o5n"/>
+                                                </connections>
+                                            </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hQB-XW-1IF">
+                                                <rect key="frame" x="197" y="480" width="20" height="20"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="fd3-cC-SOT" secondAttribute="trailing" constant="16" id="1va-tl-9aq"/>
+                                            <constraint firstItem="TMq-7u-VTD" firstAttribute="leading" secondItem="jG0-xU-aso" secondAttribute="leading" id="3Rx-eO-HFx"/>
+                                            <constraint firstItem="HtF-mp-Q3S" firstAttribute="leading" secondItem="jG0-xU-aso" secondAttribute="leading" id="4kI-uD-3HT"/>
+                                            <constraint firstAttribute="trailing" secondItem="TMq-7u-VTD" secondAttribute="trailing" id="5GQ-Pa-5v7"/>
+                                            <constraint firstItem="kmq-CW-gbt" firstAttribute="top" secondItem="n34-pT-sNB" secondAttribute="bottom" constant="35" id="6mS-2U-UhW"/>
+                                            <constraint firstItem="ks9-h0-JO3" firstAttribute="width" secondItem="d0g-fI-OcU" secondAttribute="width" id="9YQ-qR-pUa"/>
+                                            <constraint firstAttribute="trailing" secondItem="hQB-XW-1IF" secondAttribute="trailing" constant="197" id="Bza-dD-j0a"/>
+                                            <constraint firstItem="fd3-cC-SOT" firstAttribute="leading" secondItem="jG0-xU-aso" secondAttribute="leading" constant="16" id="Dmz-8j-eG3"/>
+                                            <constraint firstItem="nlq-R9-QLO" firstAttribute="top" secondItem="kmq-CW-gbt" secondAttribute="bottom" constant="5" id="Eie-f1-azw"/>
+                                            <constraint firstItem="hQB-XW-1IF" firstAttribute="leading" secondItem="jG0-xU-aso" secondAttribute="leading" constant="197" id="H3m-xC-m6S"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="d0g-fI-OcU" secondAttribute="trailing" constant="8" id="IJe-hh-NeD"/>
+                                            <constraint firstItem="TMq-7u-VTD" firstAttribute="top" secondItem="jG0-xU-aso" secondAttribute="top" constant="14" id="Js7-eI-wal"/>
+                                            <constraint firstItem="n34-pT-sNB" firstAttribute="leading" secondItem="jG0-xU-aso" secondAttribute="leading" constant="16" id="M7h-xv-f1A"/>
+                                            <constraint firstItem="ks9-h0-JO3" firstAttribute="top" secondItem="d0g-fI-OcU" secondAttribute="top" id="MFL-P5-nEq"/>
+                                            <constraint firstItem="ks9-h0-JO3" firstAttribute="leading" secondItem="nlq-R9-QLO" secondAttribute="leading" id="NIb-ac-LBl"/>
+                                            <constraint firstItem="fd3-cC-SOT" firstAttribute="top" secondItem="HtF-mp-Q3S" secondAttribute="bottom" constant="35" id="SbU-Ox-UJE"/>
+                                            <constraint firstItem="ks9-h0-JO3" firstAttribute="baseline" secondItem="d0g-fI-OcU" secondAttribute="firstBaseline" id="Suk-y2-dLw"/>
+                                            <constraint firstItem="gPO-R8-PHn" firstAttribute="top" relation="lessThanOrEqual" secondItem="GtH-mI-6Ye" secondAttribute="bottom" constant="263" id="T3Z-C8-iaN"/>
+                                            <constraint firstItem="nlq-R9-QLO" firstAttribute="leading" secondItem="jG0-xU-aso" secondAttribute="leading" constant="16" id="V5O-g2-xNJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="nlq-R9-QLO" secondAttribute="trailing" constant="16" id="Vuv-Bd-hvE"/>
+                                            <constraint firstItem="n34-pT-sNB" firstAttribute="top" secondItem="fd3-cC-SOT" secondAttribute="bottom" constant="5" id="Xo6-dS-TAZ"/>
+                                            <constraint firstItem="d0g-fI-OcU" firstAttribute="leading" secondItem="ks9-h0-JO3" secondAttribute="trailing" constant="12" id="Y3D-xF-n8n"/>
+                                            <constraint firstItem="ks9-h0-JO3" firstAttribute="top" secondItem="nlq-R9-QLO" secondAttribute="bottom" constant="39" id="aQf-za-ZSj"/>
+                                            <constraint firstItem="GtH-mI-6Ye" firstAttribute="leading" secondItem="jG0-xU-aso" secondAttribute="leading" constant="16" id="dkI-Hm-KmX"/>
+                                            <constraint firstItem="hQB-XW-1IF" firstAttribute="top" secondItem="GtH-mI-6Ye" secondAttribute="bottom" constant="26" id="fYN-jL-Ysc"/>
+                                            <constraint firstItem="kmq-CW-gbt" firstAttribute="leading" secondItem="jG0-xU-aso" secondAttribute="leading" constant="16" id="g8K-q8-1VX"/>
+                                            <constraint firstAttribute="bottom" secondItem="gPO-R8-PHn" secondAttribute="bottom" constant="35" id="gq6-yX-elM"/>
+                                            <constraint firstAttribute="trailing" secondItem="n34-pT-sNB" secondAttribute="trailing" constant="16" id="jJR-9m-mZH"/>
+                                            <constraint firstAttribute="trailing" secondItem="HtF-mp-Q3S" secondAttribute="trailing" id="l0m-BK-wuC"/>
+                                            <constraint firstItem="gPO-R8-PHn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jG0-xU-aso" secondAttribute="leading" constant="20" symbolic="YES" id="ozE-zI-Wxe"/>
+                                            <constraint firstAttribute="trailing" secondItem="GtH-mI-6Ye" secondAttribute="trailing" constant="16" id="qnf-w9-8HN"/>
+                                            <constraint firstItem="fd3-cC-SOT" firstAttribute="leading" secondItem="jG0-xU-aso" secondAttribute="leading" constant="16" id="rMA-wX-jtl"/>
+                                            <constraint firstAttribute="trailing" secondItem="fd3-cC-SOT" secondAttribute="trailing" constant="16" id="vDU-j7-8E9"/>
+                                            <constraint firstAttribute="trailing" secondItem="gPO-R8-PHn" secondAttribute="trailing" constant="16" id="vha-GH-96P"/>
+                                            <constraint firstItem="HtF-mp-Q3S" firstAttribute="top" secondItem="TMq-7u-VTD" secondAttribute="bottom" constant="37" id="xAU-DT-SCT"/>
+                                            <constraint firstAttribute="trailing" secondItem="kmq-CW-gbt" secondAttribute="trailing" constant="16" id="ysJ-Gx-VWT"/>
+                                            <constraint firstItem="GtH-mI-6Ye" firstAttribute="top" secondItem="ks9-h0-JO3" secondAttribute="bottom" constant="35" id="zM6-9I-Tfa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jG0-xU-aso" secondAttribute="bottom" id="f8h-id-VUq"/>
+                                    <constraint firstAttribute="trailing" secondItem="jG0-xU-aso" secondAttribute="trailing" id="j4H-YB-WHc"/>
+                                    <constraint firstItem="jG0-xU-aso" firstAttribute="leading" secondItem="nQH-k0-I0E" secondAttribute="leading" id="rAI-f8-PBb"/>
+                                    <constraint firstItem="jG0-xU-aso" firstAttribute="top" secondItem="nQH-k0-I0E" secondAttribute="top" id="vOq-Ug-KRC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nQH-k0-I0E" firstAttribute="leading" secondItem="wn1-Fj-q6N" secondAttribute="leading" id="3g8-tD-p57"/>
+                            <constraint firstAttribute="bottom" secondItem="nQH-k0-I0E" secondAttribute="bottom" id="COj-UV-9d6"/>
+                            <constraint firstItem="nQH-k0-I0E" firstAttribute="top" secondItem="wn1-Fj-q6N" secondAttribute="top" id="O4L-nB-i6t"/>
+                            <constraint firstItem="jG0-xU-aso" firstAttribute="height" secondItem="U8L-PH-Bfn" secondAttribute="height" priority="250" id="dUo-zC-ul8"/>
+                            <constraint firstItem="jG0-xU-aso" firstAttribute="width" secondItem="U8L-PH-Bfn" secondAttribute="width" id="mIs-4C-H32"/>
+                            <constraint firstItem="wn1-Fj-q6N" firstAttribute="trailing" secondItem="nQH-k0-I0E" secondAttribute="trailing" id="uWx-c9-c7x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wn1-Fj-q6N"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="hQB-XW-1IF" id="DAq-Fk-vSu"/>
+                        <outlet property="contactField" destination="n34-pT-sNB" id="w2Z-aY-Cop"/>
+                        <outlet property="enterButton" destination="GtH-mI-6Ye" id="xiJ-Jo-K6w"/>
+                        <outlet property="healthLabel" destination="TMq-7u-VTD" id="qTL-SD-fwB"/>
+                        <outlet property="passwordField" destination="nlq-R9-QLO" id="7sY-Nt-6JW"/>
+                        <outlet property="registrationButton" destination="gPO-R8-PHn" id="wAm-AR-QUV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hhv-JJ-zZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3539.130434782609" y="-362.27678571428572"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -395,33 +592,33 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="832"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osn-z1-q8z">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="860.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="792"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Здоровье 2.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wl-x5-q3a">
-                                                <rect key="frame" x="0.0" y="14" width="414" height="20"/>
+                                                <rect key="frame" x="0.0" y="14" width="414" height="15.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZV-cN-ZcJ">
-                                                <rect key="frame" x="20" y="71" width="374" height="35"/>
+                                                <rect key="frame" x="20" y="66.666666666666671" width="374" height="27"/>
                                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваше имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XX-mD-Ddg">
-                                                <rect key="frame" x="16" y="133" width="69" height="17.5"/>
+                                                <rect key="frame" x="16" y="120.66666666666666" width="75.666666666666671" height="13.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Электронная почта" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovp-TC-zzM">
-                                                <rect key="frame" x="16" y="222.5" width="136.5" height="17.5"/>
+                                                <rect key="frame" x="16" y="206" width="149" height="13.666666666666657"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qFX-Ql-CPt" userLabel="Name">
-                                                <rect key="frame" x="16" y="155.5" width="382" height="50"/>
+                                                <rect key="frame" x="16" y="139" width="382" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="dou-gb-bD1"/>
                                                 </constraints>
@@ -433,7 +630,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gM0-s6-OPc" userLabel="Email">
-                                                <rect key="frame" x="16" y="245" width="382" height="50"/>
+                                                <rect key="frame" x="16" y="224.66666666666669" width="382" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="wMq-90-Lae"/>
                                                 </constraints>
@@ -445,13 +642,13 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0i-Py-Ajf">
-                                                <rect key="frame" x="16" y="312" width="43.5" height="17.5"/>
+                                                <rect key="frame" x="16" y="291.66666666666669" width="45" height="13.333333333333314"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-iZ-z8g" userLabel="City">
-                                                <rect key="frame" x="16" y="334.5" width="382" height="50"/>
+                                                <rect key="frame" x="16" y="310" width="382" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="RLN-8s-QNP"/>
                                                 </constraints>
@@ -463,45 +660,45 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJl-cZ-n2X">
-                                                <rect key="frame" x="16" y="401.5" width="53" height="17.5"/>
+                                                <rect key="frame" x="16" y="377" width="57" height="13.666666666666686"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gKY-Oj-7Hk" userLabel="City">
-                                                <rect key="frame" x="16" y="424" width="382" height="50"/>
+                                                <rect key="frame" x="16" y="395.66666666666669" width="382" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="PFY-vO-pY4"/>
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" textContentType="password"/>
                                                 <connections>
                                                     <outlet property="delegate" destination="BYZ-38-t0r" id="rzn-WP-XXY"/>
                                                 </connections>
                                             </textField>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uBh-Bk-V3L">
-                                                <rect key="frame" x="16" y="493" width="51" height="31"/>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uBh-Bk-V3L">
+                                                <rect key="frame" x="16" y="464.66666666666669" width="51" height="31"/>
                                                 <color key="onTintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                             </switch>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QBn-a9-ttn">
-                                                <rect key="frame" x="16" y="555" width="51" height="31"/>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QBn-a9-ttn">
+                                                <rect key="frame" x="16" y="526.66666666666663" width="51" height="31"/>
                                                 <color key="onTintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                             </switch>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Я принимаю a оферты" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43H-Pc-lX0">
-                                                <rect key="frame" x="84" y="489" width="253" height="42"/>
+                                                <rect key="frame" x="84" y="460.66666666666669" width="253" height="42"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Получать полезные   информационные материалы по СМС" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Coq-f8-tpB">
-                                                <rect key="frame" x="84" y="553" width="493.5" height="17.5"/>
+                                                <rect key="frame" x="84.000000000000028" y="524.66666666666663" width="493.66666666666674" height="13.666666666666629"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93C-fY-dRb">
-                                                <rect key="frame" x="16" y="777.5" width="382" height="48"/>
+                                                <rect key="frame" x="16" y="654" width="382" height="48"/>
                                                 <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="9Ii-Np-zql"/>
@@ -510,7 +707,7 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Зарегистрироваться"/>
                                                 <connections>
-                                                    <segue destination="gy3-cP-2ZE" kind="show" id="HIn-eI-Hp4"/>
+                                                    <action selector="registration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYt-uX-P5y"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -532,7 +729,6 @@
                                             <constraint firstItem="ovp-TC-zzM" firstAttribute="top" secondItem="qFX-Ql-CPt" secondAttribute="bottom" constant="17" id="HM9-0q-xq0"/>
                                             <constraint firstItem="1XX-mD-Ddg" firstAttribute="leading" secondItem="Osn-z1-q8z" secondAttribute="leading" constant="16" id="HgE-r6-8mq"/>
                                             <constraint firstItem="Coq-f8-tpB" firstAttribute="top" secondItem="43H-Pc-lX0" secondAttribute="bottom" constant="22" id="Hry-06-iXu"/>
-                                            <constraint firstItem="93C-fY-dRb" firstAttribute="top" secondItem="QBn-a9-ttn" secondAttribute="bottom" constant="191.33333333333337" id="JSQ-kp-r9v"/>
                                             <constraint firstAttribute="trailing" secondItem="gKY-Oj-7Hk" secondAttribute="trailing" constant="16" id="KSJ-A2-kS5"/>
                                             <constraint firstAttribute="trailing" secondItem="Coq-f8-tpB" secondAttribute="trailing" constant="-163.5" id="Kfe-Mz-pbk"/>
                                             <constraint firstItem="qFX-Ql-CPt" firstAttribute="leading" secondItem="Osn-z1-q8z" secondAttribute="leading" constant="16" id="LkO-ed-MDh"/>
@@ -554,10 +750,11 @@
                                             <constraint firstItem="Aed-iZ-z8g" firstAttribute="top" secondItem="g0i-Py-Ajf" secondAttribute="bottom" constant="5" id="hb5-TI-UVo"/>
                                             <constraint firstItem="gKY-Oj-7Hk" firstAttribute="leading" secondItem="FJl-cZ-n2X" secondAttribute="leading" id="l73-hD-7iu"/>
                                             <constraint firstAttribute="trailing" secondItem="qFX-Ql-CPt" secondAttribute="trailing" constant="16" id="npR-Ct-LAl"/>
-                                            <constraint firstAttribute="bottom" secondItem="93C-fY-dRb" secondAttribute="bottom" constant="35" id="oVN-kx-zKQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="93C-fY-dRb" secondAttribute="bottom" constant="90" id="oVN-kx-zKQ"/>
                                             <constraint firstItem="Aed-iZ-z8g" firstAttribute="leading" secondItem="Osn-z1-q8z" secondAttribute="leading" constant="16" id="p6h-5C-fpR"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="g0i-Py-Ajf" secondAttribute="trailing" constant="20" symbolic="YES" id="pk0-d8-yzD"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FJl-cZ-n2X" secondAttribute="trailing" constant="20" symbolic="YES" id="qV4-XI-jX1"/>
+                                            <constraint firstItem="93C-fY-dRb" firstAttribute="top" secondItem="QBn-a9-ttn" secondAttribute="bottom" constant="96.333333333333371" id="qVd-nV-0De"/>
                                             <constraint firstItem="FJl-cZ-n2X" firstAttribute="leading" secondItem="Osn-z1-q8z" secondAttribute="leading" constant="16" id="rEq-r2-Qro"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1XX-mD-Ddg" secondAttribute="trailing" constant="20" symbolic="YES" id="tbh-aK-6lk"/>
                                             <constraint firstAttribute="trailing" secondItem="Aed-iZ-z8g" secondAttribute="trailing" constant="16" id="wrS-8Z-ZYp"/>
@@ -593,9 +790,12 @@
                         <outlet property="emailField" destination="gM0-s6-OPc" id="YzT-DF-9nD"/>
                         <outlet property="healthLabel" destination="5Wl-x5-q3a" id="zA4-3y-wAc"/>
                         <outlet property="nameField" destination="qFX-Ql-CPt" id="j7m-Xe-zh5"/>
+                        <outlet property="offerSwitch" destination="uBh-Bk-V3L" id="P2y-Hn-hLd"/>
                         <outlet property="passwordField" destination="gKY-Oj-7Hk" id="IdF-6H-cIN"/>
+                        <outlet property="scrollView" destination="TnY-fp-X4v" id="dQ2-4c-NJu"/>
                         <outlet property="switch1Label" destination="43H-Pc-lX0" id="avh-nV-7ax"/>
                         <outlet property="switch2Label" destination="Coq-f8-tpB" id="b39-6O-LXB"/>
+                        <segue destination="srl-bq-ijf" kind="show" identifier="segueReg" id="nCG-Ly-qLP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -838,17 +1038,17 @@
                                 <rect key="frame" x="0.0" y="35" width="414" height="53"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cYQ-nx-dgT">
-                                        <rect key="frame" x="189.5" y="11" width="161.5" height="36"/>
+                                        <rect key="frame" x="189.66666666666663" y="11" width="161.33333333333337" height="36"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Connected" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SsV-QA-Vjn">
-                                                <rect key="frame" x="112.5" y="4" width="28" height="28"/>
+                                                <rect key="frame" x="112.33333333333334" y="4" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="91a-w9-mz9"/>
                                                     <constraint firstAttribute="width" constant="28" id="ZTR-nF-2BH"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Соединен" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8p-wQ-LyE">
-                                                <rect key="frame" x="15" y="6" width="95.5" height="28"/>
+                                                <rect key="frame" x="15" y="6" width="95.333333333333329" height="28"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -876,7 +1076,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Здоровье 2.0.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ofj-Am-f1K">
-                                        <rect key="frame" x="17" y="21" width="154.5" height="19"/>
+                                        <rect key="frame" x="17" y="21" width="154.66666666666666" height="19"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1113,13 +1313,13 @@
                                                         <rect key="frame" x="0.0" y="115" width="187" height="107"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="73" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMV-Ji-hGG">
-                                                                <rect key="frame" x="0.0" y="34" width="187" height="30.5"/>
+                                                                <rect key="frame" x="0.0" y="34" width="187" height="30.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="34"/>
                                                                 <color key="textColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Энергия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDI-37-U25">
-                                                                <rect key="frame" x="0.0" y="65.5" width="187" height="12"/>
+                                                                <rect key="frame" x="0.0" y="65.666666666666629" width="187" height="12"/>
                                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="13"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1146,13 +1346,13 @@
                                                         <rect key="frame" x="195" y="0.0" width="187" height="107"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="93" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-AB-qND">
-                                                                <rect key="frame" x="0.0" y="34" width="187" height="30.5"/>
+                                                                <rect key="frame" x="0.0" y="34" width="187" height="30.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="34"/>
                                                                 <color key="textColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уровень стресса" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wog-U2-4GM">
-                                                                <rect key="frame" x="0.0" y="65.5" width="187" height="12"/>
+                                                                <rect key="frame" x="0.0" y="65.666666666666686" width="187" height="12"/>
                                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="13"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -1275,17 +1475,17 @@
                                 <rect key="frame" x="0.0" y="35" width="414" height="53"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3nT-ZX-pIm">
-                                        <rect key="frame" x="189.5" y="11" width="161.5" height="36"/>
+                                        <rect key="frame" x="189.66666666666663" y="11" width="161.33333333333337" height="36"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Connected" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1xA-dJ-a8z">
-                                                <rect key="frame" x="112.5" y="4" width="28" height="28"/>
+                                                <rect key="frame" x="112.33333333333334" y="4" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="60S-0o-jKH"/>
                                                     <constraint firstAttribute="width" constant="28" id="klw-Pt-sHL"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Соединен" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuf-k6-F1V">
-                                                <rect key="frame" x="15" y="6" width="95.5" height="28"/>
+                                                <rect key="frame" x="15" y="6" width="95.333333333333329" height="28"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1313,7 +1513,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Здоровье 2.0.png" translatesAutoresizingMaskIntoConstraints="NO" id="gqG-E8-KJd">
-                                        <rect key="frame" x="17" y="21" width="154.5" height="19"/>
+                                        <rect key="frame" x="17" y="21" width="154.66666666666666" height="19"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1430,29 +1630,29 @@
                                 <rect key="frame" x="0.0" y="103" width="414" height="793"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMt-NT-fez" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="702.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="702.66666666666663"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHW-gl-Z9t" userLabel="Heart" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="8" width="382" height="85.5"/>
+                                                <rect key="frame" x="16" y="8" width="382" height="85.666666666666671"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="AxX-aa-FRc">
-                                                        <rect key="frame" x="357" y="35" width="9" height="16.5"/>
+                                                        <rect key="frame" x="357" y="35" width="9" height="16.666666666666671"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFO-8q-fce">
-                                                        <rect key="frame" x="15" y="16" width="316" height="15.5"/>
+                                                        <rect key="frame" x="15" y="16" width="316" height="15.666666666666664"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EL6-VE-8SQ" customClass="InfoSlider" customModule="Health2_0" customModuleProvider="target">
-                                                        <rect key="frame" x="15" y="51.5" width="316" height="6"/>
+                                                        <rect key="frame" x="15" y="51.666666666666657" width="316" height="6"/>
                                                         <color key="tintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="6" id="twg-iE-e1X"/>
                                                         </constraints>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vE-ka-46w">
-                                                        <rect key="frame" x="15" y="39.5" width="316" height="12"/>
+                                                        <rect key="frame" x="15" y="39.666666666666657" width="316" height="12"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1477,26 +1677,26 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ziQ-yU-uvx" userLabel="Heart" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="109.5" width="382" height="85.5"/>
+                                                <rect key="frame" x="16" y="109.66666666666666" width="382" height="85.333333333333343"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="YZq-m6-s83">
-                                                        <rect key="frame" x="357" y="35" width="9" height="16.5"/>
+                                                        <rect key="frame" x="357" y="35" width="9" height="16.333333333333329"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzl-M1-R5P">
-                                                        <rect key="frame" x="15" y="16" width="316" height="15.5"/>
+                                                        <rect key="frame" x="15" y="16" width="316" height="15.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E1B-to-4oM" customClass="InfoSlider" customModule="Health2_0" customModuleProvider="target">
-                                                        <rect key="frame" x="15" y="51.5" width="316" height="6"/>
+                                                        <rect key="frame" x="15" y="51.333333333333343" width="316" height="6"/>
                                                         <color key="tintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="6" id="gp1-Uf-pfP"/>
                                                         </constraints>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJ5-E2-zQV">
-                                                        <rect key="frame" x="15" y="39.5" width="316" height="12"/>
+                                                        <rect key="frame" x="15" y="39.333333333333343" width="316" height="12"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1521,26 +1721,26 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2m-4p-rVQ" userLabel="Heart" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="211" width="382" height="85.5"/>
+                                                <rect key="frame" x="16" y="211" width="382" height="85.666666666666686"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Z2H-8c-hW1">
-                                                        <rect key="frame" x="357" y="35" width="9" height="16.5"/>
+                                                        <rect key="frame" x="357" y="35" width="9" height="16.666666666666671"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfF-yB-XTG">
-                                                        <rect key="frame" x="15" y="16" width="316" height="15.5"/>
+                                                        <rect key="frame" x="15" y="16" width="316" height="15.666666666666664"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KJN-L1-d2y" customClass="InfoSlider" customModule="Health2_0" customModuleProvider="target">
-                                                        <rect key="frame" x="15" y="51.5" width="316" height="6"/>
+                                                        <rect key="frame" x="15" y="51.666666666666686" width="316" height="6"/>
                                                         <color key="tintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="6" id="onm-0V-r8W"/>
                                                         </constraints>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olf-zY-XDU">
-                                                        <rect key="frame" x="15" y="39.5" width="316" height="12"/>
+                                                        <rect key="frame" x="15" y="39.666666666666686" width="316" height="12"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1565,26 +1765,26 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8q-gg-PgE" userLabel="Heart" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="312.5" width="382" height="85.5"/>
+                                                <rect key="frame" x="16" y="312.66666666666669" width="382" height="85.333333333333314"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="CIk-fz-lrc">
-                                                        <rect key="frame" x="357" y="35" width="9" height="16.5"/>
+                                                        <rect key="frame" x="357" y="35" width="9" height="16.333333333333329"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fE5-I5-J3V">
-                                                        <rect key="frame" x="15" y="16" width="316" height="15.5"/>
+                                                        <rect key="frame" x="15" y="16" width="316" height="15.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O5w-98-A9H" customClass="InfoSlider" customModule="Health2_0" customModuleProvider="target">
-                                                        <rect key="frame" x="15" y="51.5" width="316" height="6"/>
+                                                        <rect key="frame" x="15" y="51.333333333333314" width="316" height="6"/>
                                                         <color key="tintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="6" id="1pI-4t-xsM"/>
                                                         </constraints>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gm4-bT-6Sb">
-                                                        <rect key="frame" x="15" y="39.5" width="316" height="12"/>
+                                                        <rect key="frame" x="15" y="39.333333333333314" width="316" height="12"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1609,26 +1809,26 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Olk-Ps-Avd" userLabel="Heart" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="414" width="382" height="85.5"/>
+                                                <rect key="frame" x="16" y="414" width="382" height="85.666666666666686"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-8g-CCp">
-                                                        <rect key="frame" x="357" y="35" width="9" height="16.5"/>
+                                                        <rect key="frame" x="357" y="35" width="9" height="16.666666666666671"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsP-rd-px3">
-                                                        <rect key="frame" x="15" y="16" width="316" height="15.5"/>
+                                                        <rect key="frame" x="15" y="16" width="316" height="15.666666666666664"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="M0Y-mA-ear" customClass="InfoSlider" customModule="Health2_0" customModuleProvider="target">
-                                                        <rect key="frame" x="15" y="51.5" width="316" height="6"/>
+                                                        <rect key="frame" x="15" y="51.666666666666629" width="316" height="6"/>
                                                         <color key="tintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="6" id="nsN-Qc-xEw"/>
                                                         </constraints>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oZ-OS-sMI">
-                                                        <rect key="frame" x="15" y="39.5" width="316" height="12"/>
+                                                        <rect key="frame" x="15" y="39.666666666666629" width="316" height="12"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1653,26 +1853,26 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mIc-mY-r5E" userLabel="Heart" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="515.5" width="382" height="85.5"/>
+                                                <rect key="frame" x="16" y="515.66666666666663" width="382" height="85.333333333333371"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="yTf-bz-TTQ">
-                                                        <rect key="frame" x="357" y="35" width="9" height="16.5"/>
+                                                        <rect key="frame" x="357" y="35" width="9" height="16.333333333333329"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeu-5Y-HAf">
-                                                        <rect key="frame" x="15" y="16" width="316" height="15.5"/>
+                                                        <rect key="frame" x="15" y="16" width="316" height="15.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Kp-nq-YPC" customClass="InfoSlider" customModule="Health2_0" customModuleProvider="target">
-                                                        <rect key="frame" x="15" y="51.5" width="316" height="6"/>
+                                                        <rect key="frame" x="15" y="51.333333333333371" width="316" height="6"/>
                                                         <color key="tintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="6" id="TO9-6M-Ovd"/>
                                                         </constraints>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKP-h0-5gQ">
-                                                        <rect key="frame" x="15" y="39.5" width="316" height="12"/>
+                                                        <rect key="frame" x="15" y="39.333333333333371" width="316" height="12"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1697,26 +1897,26 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q05-56-qHu" userLabel="Heart" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="617" width="382" height="85.5"/>
+                                                <rect key="frame" x="16" y="617" width="382" height="85.666666666666629"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="cdy-oX-N9H">
-                                                        <rect key="frame" x="357" y="35" width="9" height="16.5"/>
+                                                        <rect key="frame" x="357" y="35" width="9" height="16.666666666666671"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-62-iwT">
-                                                        <rect key="frame" x="15" y="16" width="316" height="15.5"/>
+                                                        <rect key="frame" x="15" y="16" width="316" height="15.666666666666664"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DoT-wu-0tB" customClass="InfoSlider" customModule="Health2_0" customModuleProvider="target">
-                                                        <rect key="frame" x="15" y="51.5" width="316" height="6"/>
+                                                        <rect key="frame" x="15" y="51.666666666666629" width="316" height="6"/>
                                                         <color key="tintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="6" id="lGI-Lx-Cax"/>
                                                         </constraints>
                                                     </progressView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAT-fL-ko6">
-                                                        <rect key="frame" x="15" y="39.5" width="316" height="12"/>
+                                                        <rect key="frame" x="15" y="39.666666666666629" width="316" height="12"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1780,17 +1980,17 @@
                                 <rect key="frame" x="0.0" y="35" width="414" height="53"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bKr-Z0-kEf" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                        <rect key="frame" x="189.5" y="11" width="161.5" height="36"/>
+                                        <rect key="frame" x="189.66666666666663" y="11" width="161.33333333333337" height="36"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Connected" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-by-W4H">
-                                                <rect key="frame" x="112.5" y="4" width="28" height="28"/>
+                                                <rect key="frame" x="112.33333333333334" y="4" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="28" id="BKg-el-X6L"/>
                                                     <constraint firstAttribute="height" constant="28" id="BhD-KH-CQH"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Соединен" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e89-2o-wo4">
-                                                <rect key="frame" x="15" y="6" width="95.5" height="28"/>
+                                                <rect key="frame" x="15" y="6" width="95.333333333333329" height="28"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1818,7 +2018,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Здоровье 2.0.png" translatesAutoresizingMaskIntoConstraints="NO" id="kn5-Eu-5Km">
-                                        <rect key="frame" x="17" y="21" width="154.5" height="19"/>
+                                        <rect key="frame" x="17" y="21" width="154.66666666666666" height="19"/>
                                         <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
                                 </subviews>
@@ -2022,17 +2222,17 @@
                                 <rect key="frame" x="0.0" y="35" width="414" height="53"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EjM-gm-wD5">
-                                        <rect key="frame" x="189.5" y="11" width="161.5" height="36"/>
+                                        <rect key="frame" x="189.66666666666663" y="11" width="161.33333333333337" height="36"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Connected" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cMJ-xM-Flb">
-                                                <rect key="frame" x="112.5" y="4" width="28" height="28"/>
+                                                <rect key="frame" x="112.33333333333334" y="4" width="28" height="28"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="28" id="2sr-aS-Zur"/>
                                                     <constraint firstAttribute="width" constant="28" id="5Qi-To-of6"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Соединен" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2N-yb-Dlb">
-                                                <rect key="frame" x="15" y="6" width="95.5" height="28"/>
+                                                <rect key="frame" x="15" y="6" width="95.333333333333329" height="28"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -2060,7 +2260,7 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="Здоровье 2.0.png" translatesAutoresizingMaskIntoConstraints="NO" id="4aK-4U-gd4">
-                                        <rect key="frame" x="17" y="21" width="154.5" height="19"/>
+                                        <rect key="frame" x="17" y="21" width="154.66666666666666" height="19"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -2436,7 +2636,7 @@
         <!--Search View Controller-->
         <scene sceneID="6kt-yp-aek">
             <objects>
-                <viewController id="gy3-cP-2ZE" customClass="SearchViewController" customModule="Health2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="gy3-cP-2ZE" customClass="SearchViewController" customModule="Health2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rIn-Dc-xxf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2454,7 +2654,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Держите устройство ближе к телефону" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXv-YR-0It">
-                                        <rect key="frame" x="0.0" y="39" width="414" height="15.5"/>
+                                        <rect key="frame" x="0.0" y="39" width="414" height="15.666666666666664"/>
                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -2504,7 +2704,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nY0-u6-66o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2752.1739130434785" y="381.69642857142856"/>
+            <point key="canvasLocation" x="-1942" y="-406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cvr-Rd-Tol">
@@ -2856,10 +3056,10 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHx-4Z-bdb" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="613.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="613.66666666666663"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obg-ge-Tnc">
-                                                <rect key="frame" x="16" y="23" width="382" height="13.5"/>
+                                                <rect key="frame" x="16" y="23" width="382" height="13.666666666666664"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2878,13 +3078,13 @@
                                                 </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYJ-Xv-COU">
-                                                <rect key="frame" x="16" y="113" width="382" height="13.5"/>
+                                                <rect key="frame" x="16" y="113" width="382" height="13.666666666666671"/>
                                                 <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                                 <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mtp-Sc-JHH">
-                                                <rect key="frame" x="16" y="130.5" width="382" height="409"/>
+                                                <rect key="frame" x="16" y="130.66666666666663" width="382" height="409"/>
                                                 <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="409" id="5AE-I1-5d4"/>
@@ -2895,7 +3095,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKo-QJ-zaD">
-                                                <rect key="frame" x="16" y="563.5" width="382" height="48"/>
+                                                <rect key="frame" x="16" y="563.66666666666663" width="382" height="48"/>
                                                 <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="Agl-QH-7YV"/>
@@ -3460,7 +3660,7 @@
                                 <rect key="frame" x="16" y="248" width="382" height="173"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мониторинг по часам" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSp-5y-bFd">
-                                        <rect key="frame" x="16" y="21" width="333" height="13.5"/>
+                                        <rect key="frame" x="16" y="21" width="333" height="13.666666666666664"/>
                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -3470,17 +3670,17 @@
                                         <color key="onTintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-aL-W8L">
-                                        <rect key="frame" x="183.5" y="54.5" width="15" height="22"/>
+                                        <rect key="frame" x="183.66666666666666" y="54.666666666666686" width="15" height="22"/>
                                         <state key="normal" image="ArrowUp"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каждые 3 часа" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-gx-4uQ">
-                                        <rect key="frame" x="16" y="90.5" width="350" height="25"/>
+                                        <rect key="frame" x="16" y="90.666666666666686" width="350" height="25"/>
                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="28"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.49019607843137253" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brk-Wg-Ixn">
-                                        <rect key="frame" x="183.5" y="129.5" width="15" height="22"/>
+                                        <rect key="frame" x="183.66666666666666" y="129.66666666666669" width="15" height="22"/>
                                         <state key="normal" image="ArrowDown"/>
                                     </button>
                                 </subviews>
@@ -3561,7 +3761,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Держите устройство ближе к телефону" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hw1-MN-De9">
-                                        <rect key="frame" x="0.0" y="39" width="414" height="15.5"/>
+                                        <rect key="frame" x="0.0" y="39" width="414" height="15.666666666666664"/>
                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -4755,9 +4955,21 @@
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1552"/>
                     <connections>
+                        <outlet property="daitolicPressureTextField" destination="f26-vm-OqD" id="eMn-Ca-dcC"/>
+                        <outlet property="dateBirthTextField" destination="OrY-96-nTi" id="w1K-oG-fIJ"/>
+                        <outlet property="emailTextField" destination="aMy-0a-sCM" id="0I1-4z-OzZ"/>
+                        <outlet property="growthTextField" destination="iN4-tP-Acd" id="gYc-9c-2hk"/>
+                        <outlet property="handTextField" destination="tcW-EB-USK" id="CrV-HC-OEE"/>
+                        <outlet property="nameTextField" destination="utB-Pj-hQl" id="sJo-uS-e3R"/>
+                        <outlet property="phoneTextField" destination="xat-PL-OEl" id="WjX-NR-qWd"/>
+                        <outlet property="pulseTextField" destination="TXd-Fs-Ebu" id="b9T-Hw-CVt"/>
                         <outlet property="saveButton" destination="uYH-2o-6JR" id="DIz-Ho-iBk"/>
                         <outlet property="sexButton" destination="bEL-VQ-Poc" id="Uct-t0-mEg"/>
                         <outlet property="sexTextView" destination="FJd-UQ-XNY" id="a43-nE-1n9"/>
+                        <outlet property="sleepTextField" destination="9T5-UB-eVO" id="Egp-pR-NvC"/>
+                        <outlet property="stepsTextField" destination="Doo-9w-qaS" id="ivB-m0-5Wd"/>
+                        <outlet property="systolicPressureTextField" destination="Msu-8P-JZG" id="Hev-Wr-q3C"/>
+                        <outlet property="widthTextField" destination="eA5-CG-1cW" id="wf5-5o-wh1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2no-TK-taQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4909,7 +5121,7 @@
                         <viewLayoutGuide key="safeArea" id="kVH-a8-CaD"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="showSplashScreen" id="ZCT-N0-BHO"/>
+                        <segue destination="eRD-Ix-Eqo" kind="show" identifier="showSplashScreen" id="fgy-hI-7WU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRZ-fW-U0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4951,10 +5163,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7b-GZ-kfM" userLabel="DoctorView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                <rect key="frame" x="16" y="176" width="382" height="171.5"/>
+                                <rect key="frame" x="16" y="176" width="382" height="171.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мониторинг по часам" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3p-HX-ahq">
-                                        <rect key="frame" x="16" y="21" width="333" height="13.5"/>
+                                        <rect key="frame" x="16" y="21" width="333" height="13.666666666666664"/>
                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -4964,14 +5176,14 @@
                                         <color key="onTintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88J-x9-22z">
-                                        <rect key="frame" x="184" y="54.5" width="15" height="22"/>
+                                        <rect key="frame" x="184" y="54.666666666666657" width="15" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="22" id="7ZP-fl-l5K"/>
                                         </constraints>
                                         <state key="normal" image="ArrowUp"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каждые 3 часа" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2Y-lI-QDi">
-                                        <rect key="frame" x="68" y="90.5" width="246" height="25"/>
+                                        <rect key="frame" x="68" y="90.666666666666686" width="246" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="246" id="g4z-Nm-8Ah"/>
                                         </constraints>
@@ -4980,7 +5192,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0L-H1-Ym7">
-                                        <rect key="frame" x="184" y="129.5" width="15" height="22"/>
+                                        <rect key="frame" x="184" y="129.66666666666669" width="15" height="22"/>
                                         <state key="normal" image="ArrowDown"/>
                                     </button>
                                 </subviews>
@@ -5053,6 +5265,7 @@
         <image name="Здоровье 2.0.png" width="275" height="36"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="nCG-Ly-qLP"/>
         <segue reference="Udh-nl-9NS"/>
     </inferredMetricsTieBreakers>
 </document>

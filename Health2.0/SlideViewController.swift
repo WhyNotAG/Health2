@@ -22,10 +22,14 @@ class SlideViewController: UIViewController {
     
     @IBOutlet weak var exitButton: UIButton!
     
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         imageInit()
+        emailLabel.text = UserDefaults.standard.value(forKeyPath: "contact") as! String
+        nameLabel.text = UserDefaults.standard.value(forKeyPath: "name") as! String
         
         exitButton.layer.cornerRadius = 20.0
         exitButton.layer.borderWidth = 1.0

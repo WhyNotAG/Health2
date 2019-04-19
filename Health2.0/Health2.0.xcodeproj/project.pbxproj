@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BBB53BD9D9D1E69C77F92D8B /* Pods_Health2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDC69CA0A54F1665C504E83 /* Pods_Health2_0.framework */; };
+		EE0942432264845B00F119B8 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0942422264845B00F119B8 /* Profile.swift */; };
 		EE3C2C92225B49A800A46B55 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C2C90225B49A800A46B55 /* SWRevealViewController.m */; };
 		EE4394D4225600C600510A5D /* TrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4394D3225600C600510A5D /* TrViewController.swift */; };
 		EE4394DC22560A2600510A5D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4394DB22560A2600510A5D /* ButtonView.swift */; };
@@ -27,10 +28,14 @@
 		EE5CF16C22566837002AB3CC /* IndicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CF16B22566837002AB3CC /* IndicateViewController.swift */; };
 		EE61CDC522560EF90068726C /* InfoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61CDC422560EF90068726C /* InfoSlider.swift */; };
 		EE6B98EF2257591E009977EF /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B98EE2257591E009977EF /* SlideViewController.swift */; };
-		EE6B98F122576A08009977EF /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B98F022576A08009977EF /* testViewController.swift */; };
 		EEAD812F225B6B6400726629 /* ConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD812E225B6B6400726629 /* ConsultationViewController.swift */; };
 		EEAD8134225CBA0000726629 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8133225CBA0000726629 /* CustomSegue.swift */; };
 		EEAD8138225CF7EB00726629 /* BandSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8137225CF7EB00726629 /* BandSettingsViewController.swift */; };
+		EECFEC882264912C00833163 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECFEC872264912C00833163 /* EnterViewController.swift */; };
+		EECFEC8A2264B53800833163 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECFEC892264B53800833163 /* ProfilePresenter.swift */; };
+		EECFEC8C2264CC1D00833163 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECFEC8B2264CC1D00833163 /* Protocols.swift */; };
+		EECFEC8E2264DD3300833163 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECFEC8D2264DD3300833163 /* Model.swift */; };
+		EECFEC902265EAF400833163 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECFEC8F2265EAF400833163 /* CustomAlert.swift */; };
 		EEDD6A3D225F423C007D5994 /* Settings.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A3C225F423C007D5994 /* Settings.svg */; };
 		EEDD6A3F225F4808007D5994 /* Support.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A3E225F4808007D5994 /* Support.svg */; };
 		EEDD6A41225F4880007D5994 /* Avatar.svg in Resources */ = {isa = PBXBuildFile; fileRef = EEDD6A40225F4880007D5994 /* Avatar.svg */; };
@@ -75,6 +80,7 @@
 		047082554641EE1593E0CDEF /* Pods-Health2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health2.0.release.xcconfig"; path = "Target Support Files/Pods-Health2.0/Pods-Health2.0.release.xcconfig"; sourceTree = "<group>"; };
 		57360DD6E982679F22A5582C /* Pods-Health2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health2.0.debug.xcconfig"; path = "Target Support Files/Pods-Health2.0/Pods-Health2.0.debug.xcconfig"; sourceTree = "<group>"; };
 		ABDC69CA0A54F1665C504E83 /* Pods_Health2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE0942422264845B00F119B8 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		EE3C2C90225B49A800A46B55 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		EE3C2C91225B49A800A46B55 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		EE3C2C95225B4A6F00A46B55 /* Health2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Health2.0-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -98,10 +104,14 @@
 		EE5CF16B22566837002AB3CC /* IndicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateViewController.swift; sourceTree = "<group>"; };
 		EE61CDC422560EF90068726C /* InfoSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSlider.swift; sourceTree = "<group>"; };
 		EE6B98EE2257591E009977EF /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
-		EE6B98F022576A08009977EF /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 		EEAD812E225B6B6400726629 /* ConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationViewController.swift; sourceTree = "<group>"; };
 		EEAD8133225CBA0000726629 /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		EEAD8137225CF7EB00726629 /* BandSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandSettingsViewController.swift; sourceTree = "<group>"; };
+		EECFEC872264912C00833163 /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
+		EECFEC892264B53800833163 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		EECFEC8B2264CC1D00833163 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		EECFEC8D2264DD3300833163 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EECFEC8F2265EAF400833163 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		EEDD6A3C225F423C007D5994 /* Settings.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Settings.svg; sourceTree = "<group>"; };
 		EEDD6A3E225F4808007D5994 /* Support.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Support.svg; sourceTree = "<group>"; };
 		EEDD6A40225F4880007D5994 /* Avatar.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Avatar.svg; sourceTree = "<group>"; };
@@ -218,7 +228,6 @@
 				EEE8D7F82253C05700346166 /* IndicatorsScreen */,
 				EEE8D7FB2253C83B00346166 /* DoctorScreen */,
 				EE51C0DC224CF58200914EF2 /* Main.storyboard */,
-				EE6B98F022576A08009977EF /* testViewController.swift */,
 				EE61CDC322560ECD0068726C /* CreatedElements */,
 				EE4394D22256008F00510A5D /* TrScreen */,
 				EE51C0DF224CF58300914EF2 /* Assets.xcassets */,
@@ -226,6 +235,7 @@
 				EEDD6A58225F7819007D5994 /* LaunchScreenViewController.swift */,
 				EE51C0F4224D42C000914EF2 /* Resources */,
 				EE51C0E4224CF58300914EF2 /* Info.plist */,
+				EECFEC9122661A0500833163 /* MVP */,
 			);
 			path = Health2.0;
 			sourceTree = "<group>";
@@ -251,6 +261,7 @@
 				EE61CDC422560EF90068726C /* InfoSlider.swift */,
 				EEAD8133225CBA0000726629 /* CustomSegue.swift */,
 				EEDD6A852260CC9B007D5994 /* CustomTextField.swift */,
+				EECFEC8F2265EAF400833163 /* CustomAlert.swift */,
 			);
 			path = CreatedElements;
 			sourceTree = "<group>";
@@ -265,6 +276,17 @@
 			);
 			name = SlideBarSettings;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		EECFEC9122661A0500833163 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				EE0942422264845B00F119B8 /* Profile.swift */,
+				EECFEC8D2264DD3300833163 /* Model.swift */,
+				EECFEC892264B53800833163 /* ProfilePresenter.swift */,
+				EECFEC8B2264CC1D00833163 /* Protocols.swift */,
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 		EEDD6A3B225F41E3007D5994 /* SVGImages */ = {
@@ -367,6 +389,7 @@
 			children = (
 				EE51C0F0224D348F00914EF2 /* SearchViewController.swift */,
 				EE51C0DA224CF58200914EF2 /* ViewController.swift */,
+				EECFEC872264912C00833163 /* EnterViewController.swift */,
 			);
 			path = RegistrationAndStart;
 			sourceTree = "<group>";
@@ -518,6 +541,9 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Health2.0/Pods-Health2.0-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BCryptSwift/BCryptSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework",
 			);
@@ -525,6 +551,9 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BCryptSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenuSwift.framework",
 			);
@@ -571,24 +600,29 @@
 				EE4394D4225600C600510A5D /* TrViewController.swift in Sources */,
 				EEDD6A59225F7819007D5994 /* LaunchScreenViewController.swift in Sources */,
 				EEE8D7F722523B7A00346166 /* indexViewController.swift in Sources */,
+				EECFEC882264912C00833163 /* EnterViewController.swift in Sources */,
 				EE4394DC22560A2600510A5D /* ButtonView.swift in Sources */,
 				EEDD6A862260CC9B007D5994 /* CustomTextField.swift in Sources */,
 				EEEC63462260CE5F00692DC9 /* ProfileViewController.swift in Sources */,
 				EE51C0F1224D348F00914EF2 /* SearchViewController.swift in Sources */,
 				EE51C0DB224CF58200914EF2 /* ViewController.swift in Sources */,
+				EECFEC8C2264CC1D00833163 /* Protocols.swift in Sources */,
+				EECFEC8E2264DD3300833163 /* Model.swift in Sources */,
 				EE51C0D9224CF58200914EF2 /* AppDelegate.swift in Sources */,
 				EEAD812F225B6B6400726629 /* ConsultationViewController.swift in Sources */,
 				EEDD6A7C22608DD7007D5994 /* MonitorngViewController.swift in Sources */,
+				EE0942432264845B00F119B8 /* Profile.swift in Sources */,
 				EEDD6A70225F9AF0007D5994 /* HelpSettingsViewController.swift in Sources */,
 				EE6B98EF2257591E009977EF /* SlideViewController.swift in Sources */,
+				EECFEC8A2264B53800833163 /* ProfilePresenter.swift in Sources */,
 				EEE684F3224E4B7200849E5F /* AppSettingsViewController.swift in Sources */,
-				EE6B98F122576A08009977EF /* testViewController.swift in Sources */,
 				EEDD6A802260A3EE007D5994 /* IndexAndECGViewController.swift in Sources */,
 				EE61CDC522560EF90068726C /* InfoSlider.swift in Sources */,
 				EEDD6A822260AA9D007D5994 /* ConnectHelpViewController.swift in Sources */,
 				EEAD8134225CBA0000726629 /* CustomSegue.swift in Sources */,
 				EEDD6A5C225F86E4007D5994 /* OtherNotificationViewController.swift in Sources */,
 				EEE8D7FD2253C85E00346166 /* DoctorViewController.swift in Sources */,
+				EECFEC902265EAF400833163 /* CustomAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
