@@ -16,6 +16,7 @@ class ProfilePresenter {
         
         let testElemets = [name, email, city, password]
         var result = true
+        
         // проверка на пустые поля
         for element in testElemets {
             if element!.isEmpty{
@@ -71,9 +72,113 @@ class ProfilePresenter {
     
     
     //MARK:- Profile info
-    static func getInfo() -> [String] {
-        let info = Model.getInfo()
-        return info
+   
+    
+    static func skipRegistration(){
+        Model.skipRegistration()
     }
+    
+    static func getName() -> String {
+       return Model.getName()
+    }
+    
+    static func getHeight() -> Int {
+        return Model.getHeight()
+    }
+    
+    static func getWeight() -> Int {
+       return Model.getWeight()
+    }
+    
+    static func getSex() -> Bool {
+        return Model.getSex()
+    }
+    
+    static func getHand() -> Bool {
+        return Model.getHand()
+    }
+    
+    static func getSteps() -> Int {
+        return Model.getSteps()
+    }
+    
+    static func getSleep() -> Int {
+        return Model.getSleep()
+    }
+    
+    static func getSPressure() -> Int {
+       return Model.getSPressure()
+    }
+    
+    static func getDPressure() -> Int {
+        return Model.getDPressure()
+    }
+    
+    static func getPulse() -> Int {
+       return Model.getPulse()
+    }
+    
+    static func getBirth() -> String {
+       return Model.getBirth()
+    }
+    
+    static func getPhone() -> String {
+       return Model.getPhone()
+    }
+    
+    
+    //MARK:- SET
+    static func setName(name: String) {
+        Model.setName(name: name)
+    }
+    
+    static func setHeight(height: Int) {
+        Model.setHeight(height: height)
+    }
+    
+    static func setWeight(weight: Int) {
+        Model.setWeight(weight: weight)
+    }
+    
+    static func setSex(sex: Bool) {
+        Model.setSex(sex: sex)
+    }
+    
+    static func setHand(hand: Bool) {
+        Model.setHand(hand: hand)
+    }
+    
+    static func setSteps(steps: Int) {
+        Model.setSteps(steps: steps)
+    }
+    
+    static func setSleep(sleep: Int) {
+        Model.setSleep(sleep: sleep)
+    }
+    
+    static func setSPressure(sPressure: Int) {
+        Model.setSPressure(sPressure: sPressure)
+    }
+    
+    static func setDPressure(dPressure: Int) {
+        Model.setDPressure(dPressure: dPressure)
+    }
+    
+    static func setPulse(pulse: Int) {
+        Model.setPulse(pulse: pulse)
+    }
+    
+    static func setBirth(birth: String) {
+        Model.setBirth(birth: birth)
+    }
+    
+    static func setPhone(phone: String) {
+        Model.setPhone(phone: phone)
+    }
+    
+    
+    
+    
+    
     
 }

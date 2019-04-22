@@ -28,6 +28,7 @@
 		EE5CF16C22566837002AB3CC /* IndicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5CF16B22566837002AB3CC /* IndicateViewController.swift */; };
 		EE61CDC522560EF90068726C /* InfoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61CDC422560EF90068726C /* InfoSlider.swift */; };
 		EE6B98EF2257591E009977EF /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B98EE2257591E009977EF /* SlideViewController.swift */; };
+		EE9167AD226A0B8F0000A2EB /* HandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9167AC226A0B8F0000A2EB /* HandViewController.swift */; };
 		EEAD812F225B6B6400726629 /* ConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD812E225B6B6400726629 /* ConsultationViewController.swift */; };
 		EEAD8134225CBA0000726629 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8133225CBA0000726629 /* CustomSegue.swift */; };
 		EEAD8138225CF7EB00726629 /* BandSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8137225CF7EB00726629 /* BandSettingsViewController.swift */; };
@@ -74,6 +75,7 @@
 		EEE8D7FD2253C85E00346166 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE8D7FC2253C85E00346166 /* DoctorViewController.swift */; };
 		EEEC63462260CE5F00692DC9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEC63452260CE5F00692DC9 /* ProfileViewController.swift */; };
 		EEEC63492260E21500692DC9 /* SexMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEC63482260E21500692DC9 /* SexMenuViewController.swift */; };
+		EEF3A0F0226DFCE9005928CF /* IndexInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF3A0EF226DFCE9005928CF /* IndexInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +106,7 @@
 		EE5CF16B22566837002AB3CC /* IndicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicateViewController.swift; sourceTree = "<group>"; };
 		EE61CDC422560EF90068726C /* InfoSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSlider.swift; sourceTree = "<group>"; };
 		EE6B98EE2257591E009977EF /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
+		EE9167AC226A0B8F0000A2EB /* HandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandViewController.swift; sourceTree = "<group>"; };
 		EEAD812E225B6B6400726629 /* ConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationViewController.swift; sourceTree = "<group>"; };
 		EEAD8133225CBA0000726629 /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		EEAD8137225CF7EB00726629 /* BandSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandSettingsViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 		EEE8D7FC2253C85E00346166 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
 		EEEC63452260CE5F00692DC9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EEEC63482260E21500692DC9 /* SexMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexMenuViewController.swift; sourceTree = "<group>"; };
+		EEF3A0EF226DFCE9005928CF /* IndexInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				EEE8D7F622523B7A00346166 /* indexViewController.swift */,
+				EEF3A0EF226DFCE9005928CF /* IndexInfoViewController.swift */,
 			);
 			path = HealthScreen;
 			sourceTree = "<group>";
@@ -424,6 +429,7 @@
 			children = (
 				EEEC63452260CE5F00692DC9 /* ProfileViewController.swift */,
 				EEEC63482260E21500692DC9 /* SexMenuViewController.swift */,
+				EE9167AC226A0B8F0000A2EB /* HandViewController.swift */,
 			);
 			path = ProfileScreen;
 			sourceTree = "<group>";
@@ -598,6 +604,7 @@
 				EE3C2C92225B49A800A46B55 /* SWRevealViewController.m in Sources */,
 				EE5CF16C22566837002AB3CC /* IndicateViewController.swift in Sources */,
 				EE4394D4225600C600510A5D /* TrViewController.swift in Sources */,
+				EE9167AD226A0B8F0000A2EB /* HandViewController.swift in Sources */,
 				EEDD6A59225F7819007D5994 /* LaunchScreenViewController.swift in Sources */,
 				EEE8D7F722523B7A00346166 /* indexViewController.swift in Sources */,
 				EECFEC882264912C00833163 /* EnterViewController.swift in Sources */,
@@ -615,6 +622,7 @@
 				EEDD6A70225F9AF0007D5994 /* HelpSettingsViewController.swift in Sources */,
 				EE6B98EF2257591E009977EF /* SlideViewController.swift in Sources */,
 				EECFEC8A2264B53800833163 /* ProfilePresenter.swift in Sources */,
+				EEF3A0F0226DFCE9005928CF /* IndexInfoViewController.swift in Sources */,
 				EEE684F3224E4B7200849E5F /* AppSettingsViewController.swift in Sources */,
 				EEDD6A802260A3EE007D5994 /* IndexAndECGViewController.swift in Sources */,
 				EE61CDC522560EF90068726C /* InfoSlider.swift in Sources */,

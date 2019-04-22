@@ -21,6 +21,7 @@ class SearchViewController: UIViewController {
        
         brasletsImage.layer.cornerRadius = brasletsImage.frame.size.width / 10.0
         createPulse()
+        
     }
     
     func createPulse() {

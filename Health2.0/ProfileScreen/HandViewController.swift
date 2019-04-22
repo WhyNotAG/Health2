@@ -1,32 +1,32 @@
 //
-//  SexMenuViewController.swift
+//  HandViewController.swift
 //  Health2.0
 //
-//  Created by Александр Голубкин on 12/04/2019.
+//  Created by Александр Голубкин on 19/04/2019.
 //  Copyright © 2019 Александр Голубкин. All rights reserved.
 //
 
 import UIKit
 
-class SexMenuViewController: UIViewController {
-    
+class HandViewController: UIViewController {
+
     @IBOutlet weak var contentView: UIView!
     
-    @IBOutlet weak var manButton: UIButton!
+    @IBOutlet weak var leftButton: UIButton!
     
-    @IBOutlet weak var womanButton: UIButton!
-
-    var sex = ""
+    @IBOutlet weak var rightButton: UIButton!
+    
+    var hand = ""
     var didSelectItem: ((_ item: String) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         contentView.backgroundColor = UIColor.white.withAlphaComponent(0.0)
         
-        manButton.layer.cornerRadius = 15.0
-        womanButton.layer.cornerRadius = 15.0
+        leftButton.layer.cornerRadius = 15.0
+        rightButton.layer.cornerRadius = 15.0
         
         
     }
@@ -37,22 +37,19 @@ class SexMenuViewController: UIViewController {
         self.view.removeFromSuperview()
     }
     
-    @IBAction func chooseMan(_ sender: Any) {
+    @IBAction func chooseLeft(_ sender: Any) {
         self.removeFromParent()
         self.view.removeFromSuperview()
-        sex = "Мужской"
-        UserDefaults.standard.set("Мужской", forKey: "sex")
-        didSelectItem?(sex)
+        hand = "Левая"
+        didSelectItem?(hand)
     }
     
-    @IBAction func chooseWoman(_ sender: Any) {
+    @IBAction func chooseRight(_ sender: Any) {
         self.removeFromParent()
         self.view.removeFromSuperview()
-        UserDefaults.standard.set("Женский", forKey: "sex")
-        sex =  "Женский"
-        didSelectItem?(sex)
+        hand =  "Правая"
+        didSelectItem?(hand)
     }
 
 
 }
-

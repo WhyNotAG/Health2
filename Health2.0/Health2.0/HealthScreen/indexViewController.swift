@@ -38,6 +38,7 @@ class indexViewController: UIViewController {
     @IBOutlet weak var trailing: NSLayoutConstraint!
     @IBOutlet weak var leading: NSLayoutConstraint!
     var hamburgerIsVisible = false
+    var info: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +63,38 @@ class indexViewController: UIViewController {
     
     @IBAction func openMenu(_ sender: Any) {
         sideMenuController?.revealMenu()
-    
+        UserDefaults.standard.set("Индекс здоровья", forKey: "info")
+        childController()
     }
     
+    @IBAction func indexInfo(_ sender: Any) {
+        UserDefaults.standard.set("Индекс здоровья", forKey: "info")
+        childController()
+    }
+    @IBAction func exhaustionInfo(_ sender: Any) {
+        UserDefaults.standard.set("Истощение", forKey: "info")
+        childController()
+    }
+    
+    @IBAction func stressInfo(_ sender: Any) {
+         UserDefaults.standard.set("Уровень стресса", forKey: "info")
+        childController()
+    }
+    
+    @IBAction func energyInfo(_ sender: Any) {
+         UserDefaults.standard.set("Энергия", forKey: "info")
+        childController()
+    }
+    
+    @IBAction func heartInfo(_ sender: Any) {
+         UserDefaults.standard.set("Работа сердца", forKey: "info")
+        childController()
+    }
+    
+    func childController(){
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "IndexInfoViewController") as! IndexInfoViewController
+        vc.view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        self.addChild(vc)
+        self.view.addSubview(vc.view)
+    }
 }

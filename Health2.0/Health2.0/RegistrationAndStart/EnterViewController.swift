@@ -32,10 +32,13 @@ class EnterViewController: UIViewController {
         
         passwordField.isSecureTextEntry = true
         
-        if UserDefaults.standard.value(forKeyPath: "contact") != nil {
-            contactField.text = UserDefaults.standard.value(forKeyPath: "contact") as? String
-            passwordField.text =  UserDefaults.standard.value(forKeyPath: "password") as? String
-            performSegue(withIdentifier: "segueEnter", sender: nil)
+        if UserDefaults.standard.value(forKeyPath: "contact") != nil{
+            let contactInfo = UserDefaults.standard.value(forKeyPath: "contact") as? String
+            if contactInfo != "Локальный пользователь" {
+                contactField.text = UserDefaults.standard.value(forKeyPath: "contact") as? String
+                passwordField.text =  UserDefaults.standard.value(forKeyPath: "password") as? String
+                performSegue(withIdentifier: "segueEnter", sender: nil)
+            }
         }
         
         self.hideKeyboard()
@@ -46,26 +49,39 @@ class EnterViewController: UIViewController {
         
         healthLabel.attributedText = attributedText
         
+        contactField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+        passwordField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+        
     }
 
+    //MARK:- IBActions
+    //вход в аккаунт
     @IBAction func enter(_ sender: Any) {
-        activityIndicator.isHidden = false
+        //activityIndicator.isHidden = false
         //activityIndicator.startAnimating()
         startCheck()
       
     }
     
+    //вход без регистрации
     @IBAction func freeEnter(_ sender: Any) {
-    UserDefaults.standard.set("Пользователь", forKey: "name")
-    UserDefaults.standard.set("Локальный пользователь", forKey: "contact")
+        ProfilePresenter.skipRegistration()
+        UserDefaults.standard.set("Пользователь", forKey: "name")
+        UserDefaults.standard.set("Локальный пользователь", forKey: "contact")
+        
     }
     
+    //MARK: Keyboard
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.contactField.resignFirstResponder()
         self.passwordField.resignFirstResponder()
         return true
     }
     
+    
+    @objc func textFieldDidChange(textField: UITextField){
+        textField.layer.borderColor = UIColor.darkGray.cgColor
+    }
     
     //MARK:- Check enter
     //основная проверка
@@ -110,11 +126,12 @@ class EnterViewController: UIViewController {
         return allRight
     }
     
-    
+    //MARK:- Alert
     func alert(title: String, message: String, style: UIAlertController.Style) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
+    
     
 }

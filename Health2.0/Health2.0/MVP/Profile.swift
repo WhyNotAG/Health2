@@ -9,20 +9,20 @@
 import Foundation
 import RealmSwift
 
-class personProfile: Object {
+class Profile: Object {
     
     @objc var name = ""
     @objc var token = ""
-    @objc var height = ""
-    @objc var weight = ""
-    @objc var sex = ""
-    @objc var hand = 0
+    @objc var height = 0
+    @objc var weight = 0
+    @objc var sex = true
+    @objc var hand = true
     @objc var doestSteps = 0
     @objc var doestSleepHour = 0
     @objc var systolicPressure = 0
     @objc var daitolicPressure = 0
     @objc var pulse = 0
-    @objc var dateBirth = 0
+    @objc var dateBirth = ""
     
     //id с сервера
     @objc var id = 0

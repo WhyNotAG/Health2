@@ -8,23 +8,29 @@
 
 import UIKit
 class ViewController: UIViewController,UITextFieldDelegate {
-    
+    //MARK:- Labels
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var healthLabel: UILabel!
     @IBOutlet weak var switch1Label: UILabel!
     @IBOutlet weak var switch2Label: UILabel!
     
+    
+    //MARK:- RegistrationButton
     @IBOutlet weak var button: UIButton!
     
+    //MARK:- Text Fields
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var cityField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    //MARK:- Switches
     @IBOutlet weak var offerSwitch: UISwitch!
+    
     
     var activeTextField: UITextField!
     
+    //MARK:- Life Time
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -82,6 +88,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         removeForKeyboardNotifications()
     }
     
+    
     //MARK:- Keyboard
     //Скрытие кнопки по нажатию ввод
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -93,7 +100,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
 
     @objc func textFieldDidChange(textField: UITextField){
-       textField.layer.borderColor = UIColor.lightGray.cgColor
+       textField.layer.borderColor = UIColor.darkGray.cgColor
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -104,7 +111,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
     
     //Управление notifications
     func registerForKeyboardNotifications(){
@@ -142,6 +148,42 @@ class ViewController: UIViewController,UITextFieldDelegate {
     @objc func kbWillHide(_ notification: Notification){
         UIView.animate(withDuration: 0.25, delay: 0.0, options: .curveEaseIn, animations: {
             self.view.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height)} , completion: nil)
+    }
+    
+    
+    
+    //MARK:- Alert
+    func alert(title: String, message: String, style: UIAlertController.Style) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    
+    //MARK:- Empty
+    //проверка на пустые поля
+    func checkForEmpty() -> Bool {
+        var allRight = true
+        
+        allRight = isEmptyField(checkedTextField: passwordField)
+        allRight = isEmptyField(checkedTextField: cityField)
+        allRight = isEmptyField(checkedTextField: emailField)
+        allRight = isEmptyField(checkedTextField: nameField)
+        
+        return allRight
+    }
+    
+    //обработка пустого поля
+    func isEmptyField(checkedTextField: UITextField) -> Bool{
+        var allRight = true
+        
+        if checkedTextField.text!.isEmpty {
+            allRight = false
+            checkedTextField.layer.borderColor = UIColor.red.cgColor
+            checkedTextField.placeholder = "Не заполнено поле"
+            checkedTextField.becomeFirstResponder()
+        }
+        return allRight
     }
     
     
@@ -188,51 +230,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    
-    func alert(title: String, message: String, style: UIAlertController.Style) {
-        let alertController = UIAlertController(title: title, message: message, preferredStyle: style)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alertController, animated: true, completion: nil)
-    }
-    
-    func checkForEmpty() -> Bool {
-        
-        var allRight = true
-        
-        if nameField.text!.isEmpty {
-            allRight = false
-            nameField.layer.borderColor = UIColor.red.cgColor
-            nameField.placeholder = "Не заполнено поле"
-            self.nameField.becomeFirstResponder()
-        }
-        
-        if cityField.text!.isEmpty {
-            allRight = false
-            cityField.layer.borderColor = UIColor.red.cgColor
-            cityField.placeholder = "Не заполнено поле"
-            self.cityField.becomeFirstResponder()
-        }
-        
-        if passwordField.text!.isEmpty {
-            allRight = false
-            passwordField.layer.borderColor = UIColor.red.cgColor
-            passwordField.placeholder = "Не заполнено поле"
-            self.passwordField.becomeFirstResponder()
-        }
-        
-        if emailField.text!.isEmpty {
-            allRight = false
-            emailField.layer.borderColor = UIColor.red.cgColor
-            emailField.placeholder = "Не заполнено поле"
-            self.emailField.becomeFirstResponder()
-        }
-        
-        return allRight
-    }
-    
-    
 }
 
+
+//MARK:- extensions
 extension UIViewController
 {
     func hideKeyboard()
