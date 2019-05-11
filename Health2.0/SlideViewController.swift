@@ -68,8 +68,9 @@ class SlideViewController: UIViewController {
         UserDefaults.standard.set("", forKey: "name")
         UserDefaults.standard.set("", forKey: "contact")
         UserDefaults.standard.set("", forKey: "password")
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "EnterViewController") as! EnterViewController
-        self.present(nextViewController, animated:true, completion:nil)
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "EnterViewController") as! EnterViewController
+//        self.present(nextViewController, animated:true, completion:nil)
+        dismiss(animated: true, completion: nil)
     }
 }

@@ -265,15 +265,25 @@
                                                             <constraint firstAttribute="width" constant="28" id="bdE-7M-KT0"/>
                                                         </constraints>
                                                     </webView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYc-HJ-1gD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="318" height="47"/>
+                                                        <connections>
+                                                            <segue destination="5IL-Su-FVW" kind="presentation" id="Z2d-BD-WDJ"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="jYc-HJ-1gD" firstAttribute="top" secondItem="grI-um-9tW" secondAttribute="top" id="2ez-iY-3XT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jYc-HJ-1gD" secondAttribute="trailing" id="3QP-bn-vh9"/>
                                                     <constraint firstItem="XqB-g9-3ju" firstAttribute="leading" secondItem="grI-um-9tW" secondAttribute="leading" constant="8" id="3eQ-gE-wZB"/>
                                                     <constraint firstItem="TY6-gz-Evv" firstAttribute="top" secondItem="grI-um-9tW" secondAttribute="top" constant="17" id="8QC-Ev-jzA"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jYc-HJ-1gD" secondAttribute="bottom" id="Fjg-R3-PvR"/>
                                                     <constraint firstAttribute="bottom" secondItem="TY6-gz-Evv" secondAttribute="bottom" constant="16" id="SrS-At-luZ"/>
                                                     <constraint firstAttribute="bottom" secondItem="XqB-g9-3ju" secondAttribute="bottom" constant="9" id="heC-gj-vw4"/>
                                                     <constraint firstItem="XqB-g9-3ju" firstAttribute="top" secondItem="grI-um-9tW" secondAttribute="top" constant="10" id="hje-uI-78q"/>
                                                     <constraint firstItem="TY6-gz-Evv" firstAttribute="leading" secondItem="XqB-g9-3ju" secondAttribute="trailing" constant="15" id="sey-7C-F5y"/>
+                                                    <constraint firstItem="jYc-HJ-1gD" firstAttribute="leading" secondItem="grI-um-9tW" secondAttribute="leading" id="vpV-z1-W5X"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TY6-gz-Evv" secondAttribute="trailing" id="y1B-Ar-d1h"/>
                                                 </constraints>
                                             </view>
@@ -814,7 +824,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alr-Q6-891">
-                                <rect key="frame" x="0.0" y="103" width="414" height="793"/>
+                                <rect key="frame" x="0.0" y="147" width="414" height="749"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NBg-vd-ZYg" userLabel="ContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="516"/>
@@ -846,9 +856,16 @@
                                                             <constraint firstAttribute="width" constant="64" id="yrd-Lz-4Q2"/>
                                                         </constraints>
                                                     </webView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COG-l2-VDu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="383" height="88"/>
+                                                        <connections>
+                                                            <segue destination="0jI-7G-nwp" kind="show" id="yTM-t6-ESj"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="COG-l2-VDu" secondAttribute="bottom" id="0xM-hK-iKV"/>
                                                     <constraint firstItem="IpN-Ou-7vy" firstAttribute="top" secondItem="Yjo-bK-LAZ" secondAttribute="top" constant="22" id="3id-cf-Fza"/>
                                                     <constraint firstAttribute="bottom" secondItem="IpN-Ou-7vy" secondAttribute="bottom" constant="22" id="54p-iI-c7N"/>
                                                     <constraint firstItem="oo1-6M-dxq" firstAttribute="top" secondItem="Yjo-bK-LAZ" secondAttribute="top" constant="35" id="5Bv-wF-bIg"/>
@@ -856,10 +873,13 @@
                                                     <constraint firstAttribute="bottom" secondItem="k0u-GC-Pwj" secondAttribute="bottom" constant="12" id="EcQ-fn-QAD"/>
                                                     <constraint firstItem="zvq-3H-A39" firstAttribute="top" secondItem="Yjo-bK-LAZ" secondAttribute="top" constant="12" id="Ppi-5l-eYs"/>
                                                     <constraint firstItem="IpN-Ou-7vy" firstAttribute="leading" secondItem="k0u-GC-Pwj" secondAttribute="trailing" constant="23" id="Px5-BF-c7y"/>
+                                                    <constraint firstItem="COG-l2-VDu" firstAttribute="leading" secondItem="Yjo-bK-LAZ" secondAttribute="leading" id="Rxj-77-IwU"/>
                                                     <constraint firstAttribute="trailing" secondItem="IpN-Ou-7vy" secondAttribute="trailing" constant="33" id="bbG-BF-bmv"/>
                                                     <constraint firstItem="oo1-6M-dxq" firstAttribute="leading" secondItem="IpN-Ou-7vy" secondAttribute="trailing" constant="8" id="dT8-rx-VJY"/>
                                                     <constraint firstItem="zvq-3H-A39" firstAttribute="leading" secondItem="Yjo-bK-LAZ" secondAttribute="leading" constant="16" id="dgh-Ru-Cdq"/>
                                                     <constraint firstAttribute="trailing" secondItem="oo1-6M-dxq" secondAttribute="trailing" constant="16" id="jgx-DT-RN4"/>
+                                                    <constraint firstItem="COG-l2-VDu" firstAttribute="top" secondItem="Yjo-bK-LAZ" secondAttribute="top" id="kVY-ze-WkR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="COG-l2-VDu" secondAttribute="trailing" id="n3F-2M-V1p"/>
                                                     <constraint firstAttribute="bottom" secondItem="oo1-6M-dxq" secondAttribute="bottom" constant="34" id="u6g-XS-AZ2"/>
                                                     <constraint firstItem="k0u-GC-Pwj" firstAttribute="leading" secondItem="Yjo-bK-LAZ" secondAttribute="leading" constant="16" id="uI5-Lo-A8M"/>
                                                     <constraint firstAttribute="bottom" secondItem="zvq-3H-A39" secondAttribute="bottom" constant="12" id="vcj-Ze-qrG"/>
@@ -1140,12 +1160,367 @@
             </objects>
             <point key="canvasLocation" x="687" y="1408"/>
         </scene>
+        <!--Календарь приема лекарств-->
+        <scene sceneID="AWk-dM-joU">
+            <objects>
+                <viewController id="0jI-7G-nwp" customClass="CalendarViewController" customModule="Health2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UR8-uX-epO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vqI-fI-yZb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-sR-1zq">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="766"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ka-M1-wzn">
+                                                <rect key="frame" x="16" y="16" width="382" height="48"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTA-8N-6a9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="48"/>
+                                                        <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="48" id="MEa-yA-Mc2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="15"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title=" Добавить курс"/>
+                                                        <connections>
+                                                            <segue destination="IaG-bn-Fbe" kind="show" id="3dn-Dv-cWv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add" translatesAutoresizingMaskIntoConstraints="NO" id="Lf9-3c-LPQ">
+                                                        <rect key="frame" x="346" y="10" width="28" height="28"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="28" id="eQl-uG-jva"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="0hd-w5-RMZ"/>
+                                                    <constraint firstAttribute="width" constant="382" id="1po-ve-6qC"/>
+                                                    <constraint firstItem="MTA-8N-6a9" firstAttribute="top" secondItem="6Ka-M1-wzn" secondAttribute="top" id="7D9-Tw-feS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MTA-8N-6a9" secondAttribute="trailing" id="OBq-Il-yhb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Lf9-3c-LPQ" secondAttribute="trailing" constant="8" id="S8K-Tz-OSq"/>
+                                                    <constraint firstItem="MTA-8N-6a9" firstAttribute="leading" secondItem="6Ka-M1-wzn" secondAttribute="leading" id="Wok-p5-gbz"/>
+                                                    <constraint firstItem="Lf9-3c-LPQ" firstAttribute="top" secondItem="6Ka-M1-wzn" secondAttribute="top" constant="10" id="gyn-MD-Nsw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Lf9-3c-LPQ" secondAttribute="bottom" constant="10" id="sRR-ck-7gv"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="6Ka-M1-wzn" secondAttribute="trailing" constant="16" id="AoO-hF-9a1"/>
+                                            <constraint firstItem="6Ka-M1-wzn" firstAttribute="leading" secondItem="2fv-sR-1zq" secondAttribute="leading" constant="16" id="TOM-ES-V1B"/>
+                                            <constraint firstItem="6Ka-M1-wzn" firstAttribute="top" secondItem="2fv-sR-1zq" secondAttribute="top" constant="16" id="mbX-Dg-gdr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2fv-sR-1zq" secondAttribute="trailing" id="2xE-QY-vF6"/>
+                                    <constraint firstItem="2fv-sR-1zq" firstAttribute="leading" secondItem="vqI-fI-yZb" secondAttribute="leading" id="5wd-6R-5Rf"/>
+                                    <constraint firstAttribute="bottom" secondItem="2fv-sR-1zq" secondAttribute="bottom" constant="42" id="R2E-qb-h3t"/>
+                                    <constraint firstItem="2fv-sR-1zq" firstAttribute="top" secondItem="vqI-fI-yZb" secondAttribute="top" id="Wxy-eD-b27"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2fv-sR-1zq" firstAttribute="width" secondItem="UR8-uX-epO" secondAttribute="width" id="0sR-qd-bdW"/>
+                            <constraint firstItem="vqI-fI-yZb" firstAttribute="trailing" secondItem="07Y-z0-xej" secondAttribute="trailing" id="43f-dv-nz2"/>
+                            <constraint firstItem="vqI-fI-yZb" firstAttribute="top" secondItem="07Y-z0-xej" secondAttribute="top" id="J6M-G2-nXm"/>
+                            <constraint firstItem="vqI-fI-yZb" firstAttribute="leading" secondItem="07Y-z0-xej" secondAttribute="leading" id="Ucw-JU-l0q"/>
+                            <constraint firstAttribute="bottom" secondItem="vqI-fI-yZb" secondAttribute="bottom" id="bLb-fa-NBP"/>
+                            <constraint firstItem="2fv-sR-1zq" firstAttribute="height" secondItem="UR8-uX-epO" secondAttribute="height" priority="250" constant="-130" id="ys1-dM-c5w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="07Y-z0-xej"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Календарь приема лекарств" id="kes-An-EWb">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Arrow Left" id="liq-7F-3em">
+                            <color key="tintColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="back:" destination="0jI-7G-nwp" id="fkm-6h-qDw"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Connected" image="Connected" id="uBg-Qv-CA1">
+                            <color key="tintColor" red="0.070588235289999995" green="0.84705882349999995" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addCourse" destination="MTA-8N-6a9" id="Oxv-v4-AdC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsY-u2-YMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515.9420289855075" y="1407.5892857142856"/>
+        </scene>
+        <!--Добавить курс-->
+        <scene sceneID="fvN-Ao-1Rc">
+            <objects>
+                <viewController id="IaG-bn-Fbe" customClass="AddCourseViewController" customModule="Health2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8aI-xN-3wW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ved-vh-z6b">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCe-Qy-pke">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1441"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название лекарства" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gh-Rr-mUh">
+                                                <rect key="frame" x="16" y="16" width="382" height="17.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFw-W1-ZDz" userLabel="Name" customClass="CustomTextField" customModule="Health2_0" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="37.666666666666671" width="382" height="50"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="LDj-Fu-nZo"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nTH-9A-h26"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Форма выпуска" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30y-11-WcH">
+                                                <rect key="frame" x="16" y="103.66666666666666" width="382" height="17.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Czk-B7-FAv" userLabel="Name" customClass="CustomTextField" customModule="Health2_0" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="125.33333333333334" width="382" height="50"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pOo-4i-2jI"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="syO-Kh-G9g"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR1-wE-UmO">
+                                                <rect key="frame" x="367" y="139.33333333333334" width="16" height="22"/>
+                                                <color key="tintColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" image="ArrowDown">
+                                                    <color key="titleColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Дата начала" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWg-Dn-IJ0">
+                                                <rect key="frame" x="16" y="191.33333333333331" width="191" height="17.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Дней приема" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZx-Yf-9aA">
+                                                <rect key="frame" x="207" y="191.33333333333331" width="191" height="17.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QHX-uG-h5O" userLabel="Name" customClass="CustomTextField" customModule="Health2_0" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="213" width="183" height="50"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="yad-O2-SqG"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bVg-fm-VEV"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vdd-na-Zpm" userLabel="Name" customClass="CustomTextField" customModule="Health2_0" customModuleProvider="target">
+                                                <rect key="frame" x="215" y="213" width="183" height="50"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Crr-Mf-vcp"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Fb6-At-553"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время приема" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIe-uB-uJ4">
+                                                <rect key="frame" x="16" y="279" width="382" height="17.666666666666686"/>
+                                                <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVY-X6-4OZ">
+                                                <rect key="frame" x="16" y="366.66666666666669" width="382" height="48"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="ZdD-d3-2Y5"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="263" id="Zfj-1N-4CB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                <color key="tintColor" red="0.20784313730000001" green="0.49019607840000001" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Добавить время">
+                                                    <color key="titleColor" red="0.20784313730000001" green="0.49019607840000001" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="titleShadowColor" red="0.20784313730000001" green="0.49019607840000001" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addTime:" destination="IaG-bn-Fbe" eventType="touchUpInside" id="IVZ-TU-mgJ"/>
+                                                    <action selector="freeEnter:" destination="eRD-Ix-Eqo" eventType="touchUpInside" id="YKc-Qy-bOL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-fQ-doM" customClass="DropDownButton" customModule="Health2_0" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="125.33333333333334" width="382" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="emd-fc-PTz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-Cv-fl1">
+                                                <rect key="frame" x="72" y="438.66666666666663" width="270" height="48"/>
+                                                <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="GUr-xc-GNU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="15"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Добавить курс"/>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-OG-94h">
+                                                <rect key="frame" x="16" y="300.66666666666669" width="382" height="50"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QY7-Uj-UTe" userLabel="Name" customClass="CustomTextField" customModule="Health2_0" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="pzV-GD-MBG"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="nL3-XL-o8c"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="lWg-Dn-IJ0" firstAttribute="top" secondItem="Czk-B7-FAv" secondAttribute="bottom" constant="16" id="1xp-LO-Vte"/>
+                                            <constraint firstItem="SvG-fQ-doM" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="16" id="2Sn-wu-3tS"/>
+                                            <constraint firstItem="30y-11-WcH" firstAttribute="top" secondItem="fFw-W1-ZDz" secondAttribute="bottom" constant="16" id="33m-cC-iKr"/>
+                                            <constraint firstItem="iZx-Yf-9aA" firstAttribute="leading" secondItem="lWg-Dn-IJ0" secondAttribute="trailing" id="43k-Bv-TGL"/>
+                                            <constraint firstItem="lWg-Dn-IJ0" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="16" id="4x9-hb-blr"/>
+                                            <constraint firstItem="Vdd-na-Zpm" firstAttribute="top" secondItem="iZx-Yf-9aA" secondAttribute="bottom" constant="4" id="7CB-01-MiL"/>
+                                            <constraint firstAttribute="trailing" secondItem="Czk-B7-FAv" secondAttribute="trailing" constant="16" id="8u0-JK-4ok"/>
+                                            <constraint firstItem="Vdd-na-Zpm" firstAttribute="height" secondItem="QHX-uG-h5O" secondAttribute="height" id="B1T-3x-kap"/>
+                                            <constraint firstItem="lWg-Dn-IJ0" firstAttribute="height" secondItem="iZx-Yf-9aA" secondAttribute="height" id="BJB-u5-nhN"/>
+                                            <constraint firstItem="fFw-W1-ZDz" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="16" id="BiS-U4-hBV"/>
+                                            <constraint firstItem="Czk-B7-FAv" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="16" id="FA0-qQ-YhW"/>
+                                            <constraint firstItem="aIe-uB-uJ4" firstAttribute="top" secondItem="QHX-uG-h5O" secondAttribute="bottom" constant="16" id="G6D-3B-sp4"/>
+                                            <constraint firstItem="aIe-uB-uJ4" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="16" id="GZe-24-yNV"/>
+                                            <constraint firstItem="QHX-uG-h5O" firstAttribute="top" secondItem="lWg-Dn-IJ0" secondAttribute="bottom" constant="4" id="HKM-lg-uY7"/>
+                                            <constraint firstItem="bIb-Cv-fl1" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="72" id="HRp-ES-bjH"/>
+                                            <constraint firstItem="bIb-Cv-fl1" firstAttribute="top" secondItem="YVY-X6-4OZ" secondAttribute="bottom" constant="24" id="L3Q-Qa-Vmt"/>
+                                            <constraint firstAttribute="trailing" secondItem="fFw-W1-ZDz" secondAttribute="trailing" constant="16" id="LEt-pK-Wj9"/>
+                                            <constraint firstItem="QHX-uG-h5O" firstAttribute="leading" secondItem="lWg-Dn-IJ0" secondAttribute="leading" id="Lkm-Yq-TBu"/>
+                                            <constraint firstAttribute="trailing" secondItem="bIb-Cv-fl1" secondAttribute="trailing" constant="72" id="Nmj-wP-bIJ"/>
+                                            <constraint firstItem="Vdd-na-Zpm" firstAttribute="leading" secondItem="QHX-uG-h5O" secondAttribute="trailing" constant="16" id="Q9y-HA-wro"/>
+                                            <constraint firstItem="vgF-OG-94h" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="16" id="RkF-Pg-h17"/>
+                                            <constraint firstAttribute="trailing" secondItem="YR1-wE-UmO" secondAttribute="trailing" constant="31" id="S6Q-oG-h27"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Gh-Rr-mUh" secondAttribute="trailing" constant="16" id="Sdq-YH-UTw"/>
+                                            <constraint firstItem="fFw-W1-ZDz" firstAttribute="top" secondItem="3Gh-Rr-mUh" secondAttribute="bottom" constant="4" id="Twb-DD-R8c"/>
+                                            <constraint firstItem="SvG-fQ-doM" firstAttribute="top" secondItem="30y-11-WcH" secondAttribute="bottom" constant="4" id="VIG-gZ-Dn1"/>
+                                            <constraint firstItem="Vdd-na-Zpm" firstAttribute="width" secondItem="QHX-uG-h5O" secondAttribute="width" id="XwV-Xq-eTb"/>
+                                            <constraint firstItem="YVY-X6-4OZ" firstAttribute="top" secondItem="vgF-OG-94h" secondAttribute="bottom" constant="16" id="YBt-et-WI4"/>
+                                            <constraint firstItem="Vdd-na-Zpm" firstAttribute="trailing" secondItem="iZx-Yf-9aA" secondAttribute="trailing" id="YiE-8M-kTN"/>
+                                            <constraint firstItem="YVY-X6-4OZ" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="16" id="bDn-sK-Ldy"/>
+                                            <constraint firstAttribute="trailing" secondItem="SvG-fQ-doM" secondAttribute="trailing" constant="16" id="ckV-qK-fgp"/>
+                                            <constraint firstItem="Czk-B7-FAv" firstAttribute="top" secondItem="30y-11-WcH" secondAttribute="bottom" constant="4" id="csK-ha-Sgh"/>
+                                            <constraint firstItem="SvG-fQ-doM" firstAttribute="top" secondItem="30y-11-WcH" secondAttribute="bottom" constant="4" id="csV-u4-MC5"/>
+                                            <constraint firstItem="vgF-OG-94h" firstAttribute="top" secondItem="aIe-uB-uJ4" secondAttribute="bottom" constant="4" id="ejL-is-Jr6"/>
+                                            <constraint firstItem="lWg-Dn-IJ0" firstAttribute="width" secondItem="iZx-Yf-9aA" secondAttribute="width" id="gMG-5P-O87"/>
+                                            <constraint firstAttribute="trailing" secondItem="iZx-Yf-9aA" secondAttribute="trailing" constant="16" id="hIl-Gz-Sw0"/>
+                                            <constraint firstItem="3Gh-Rr-mUh" firstAttribute="top" secondItem="ZCe-Qy-pke" secondAttribute="top" constant="16" id="jh1-NU-59o"/>
+                                            <constraint firstAttribute="trailing" secondItem="30y-11-WcH" secondAttribute="trailing" constant="16" id="lme-Xm-GAs"/>
+                                            <constraint firstItem="30y-11-WcH" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="16" id="qrM-XW-EbK"/>
+                                            <constraint firstAttribute="trailing" secondItem="vgF-OG-94h" secondAttribute="trailing" constant="16" id="rQY-Yx-Bd3"/>
+                                            <constraint firstAttribute="trailing" secondItem="YVY-X6-4OZ" secondAttribute="trailing" constant="16" id="rem-OA-gKp"/>
+                                            <constraint firstItem="3Gh-Rr-mUh" firstAttribute="leading" secondItem="ZCe-Qy-pke" secondAttribute="leading" constant="16" id="sa8-dT-uIY"/>
+                                            <constraint firstAttribute="trailing" secondItem="aIe-uB-uJ4" secondAttribute="trailing" constant="16" id="u8Q-uX-kXe"/>
+                                            <constraint firstItem="YR1-wE-UmO" firstAttribute="top" secondItem="30y-11-WcH" secondAttribute="bottom" constant="18" id="uEQ-5P-8rm"/>
+                                            <constraint firstItem="iZx-Yf-9aA" firstAttribute="top" secondItem="Czk-B7-FAv" secondAttribute="bottom" constant="16" id="uKJ-Tp-JS2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZCe-Qy-pke" secondAttribute="bottom" constant="-633" id="3ab-QE-81P"/>
+                                    <constraint firstItem="ZCe-Qy-pke" firstAttribute="centerY" secondItem="ved-vh-z6b" secondAttribute="centerY" constant="316.5" id="DkC-pp-HiE"/>
+                                    <constraint firstItem="ZCe-Qy-pke" firstAttribute="leading" secondItem="ved-vh-z6b" secondAttribute="leading" id="Ppa-jS-AX4"/>
+                                    <constraint firstItem="ZCe-Qy-pke" firstAttribute="top" secondItem="ved-vh-z6b" secondAttribute="top" id="aeb-uT-SGl"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZCe-Qy-pke" secondAttribute="trailing" id="chp-r9-aUf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ved-vh-z6b" firstAttribute="top" secondItem="fkV-iN-a2B" secondAttribute="top" id="4uw-ac-S1s"/>
+                            <constraint firstItem="ved-vh-z6b" firstAttribute="trailing" secondItem="fkV-iN-a2B" secondAttribute="trailing" id="KXI-BL-1A6"/>
+                            <constraint firstItem="ved-vh-z6b" firstAttribute="leading" secondItem="fkV-iN-a2B" secondAttribute="leading" id="OAg-9y-yDF"/>
+                            <constraint firstAttribute="bottom" secondItem="ved-vh-z6b" secondAttribute="bottom" id="mii-yi-no7"/>
+                            <constraint firstItem="ZCe-Qy-pke" firstAttribute="width" secondItem="8aI-xN-3wW" secondAttribute="width" id="ybg-Ia-M12"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fkV-iN-a2B"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Добавить курс" id="wUe-hJ-EJz">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Arrow Left" id="NiI-qp-xEE">
+                            <color key="tintColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="back:" destination="IaG-bn-Fbe" id="mMR-sI-zwr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Connected" image="Connected" id="7lv-4Z-3GD">
+                            <color key="tintColor" red="0.070588235289999995" green="0.84705882349999995" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addTimeButton" destination="YVY-X6-4OZ" id="LVV-vY-GeT"/>
+                        <outlet property="contentView" destination="ZCe-Qy-pke" id="1Ts-Il-ecd"/>
+                        <outlet property="dateTextField" destination="QHX-uG-h5O" id="e6S-vj-eax"/>
+                        <outlet property="daysTextField" destination="Vdd-na-Zpm" id="Wfr-ku-eMO"/>
+                        <outlet property="formButton" destination="SvG-fQ-doM" id="GeZ-2S-Nmg"/>
+                        <outlet property="nameTextField" destination="fFw-W1-ZDz" id="vAP-Vp-yxp"/>
+                        <outlet property="saveCourse" destination="bIb-Cv-fl1" id="nq0-S4-waH"/>
+                        <outlet property="scrollView" destination="ved-vh-z6b" id="o41-hG-77h"/>
+                        <outlet property="stackView" destination="vgF-OG-94h" id="Mk6-rD-vxy"/>
+                        <outlet property="timeTextField" destination="QY7-Uj-UTe" id="azJ-N3-ATa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXI-3z-miy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2350.7246376811595" y="1407.5892857142856"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="uG2-kZ-0FX">
             <objects>
-                <navigationController navigationBarHidden="YES" id="JQm-Ee-M4o" sceneMemberID="viewController">
+                <navigationController id="JQm-Ee-M4o" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PYq-GE-TaG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="tbt-Wm-0pv" kind="relationship" relationship="rootViewController" id="pHJ-1M-tLX"/>
@@ -1203,7 +1578,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMB-US-ai3">
-                                                        <rect key="frame" x="250" y="0.0" width="28" height="28"/>
+                                                        <rect key="frame" x="250" y="0.0" width="16" height="22"/>
                                                         <state key="normal" image="Info"/>
                                                         <connections>
                                                             <action selector="indexInfo:" destination="lqp-Xq-Bf5" eventType="touchUpInside" id="QyJ-33-IcY"/>
@@ -1297,7 +1672,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEU-6A-wBB">
-                                                                <rect key="frame" x="149" y="14" width="28" height="28"/>
+                                                                <rect key="frame" x="149" y="14" width="28" height="22"/>
                                                                 <state key="normal" image="Info"/>
                                                                 <connections>
                                                                     <action selector="exhaustionInfo:" destination="lqp-Xq-Bf5" eventType="touchUpInside" id="aOv-WM-sNJ"/>
@@ -1334,7 +1709,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfw-Cx-aHD">
-                                                                <rect key="frame" x="149" y="14" width="28" height="28"/>
+                                                                <rect key="frame" x="161" y="14" width="16" height="22"/>
                                                                 <state key="normal" image="Info"/>
                                                                 <connections>
                                                                     <action selector="energyInfo:" destination="lqp-Xq-Bf5" eventType="touchUpInside" id="kFf-FU-lPp"/>
@@ -1381,7 +1756,7 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPc-OM-l68">
-                                                        <rect key="frame" x="344" y="14" width="28" height="28"/>
+                                                        <rect key="frame" x="344" y="14" width="28" height="22"/>
                                                         <state key="normal" image="Info"/>
                                                         <connections>
                                                             <action selector="stressInfo:" destination="lqp-Xq-Bf5" eventType="touchUpInside" id="HR4-aF-nUN"/>
@@ -1403,7 +1778,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxd-aO-YAq">
-                                                                <rect key="frame" x="149" y="14" width="28" height="28"/>
+                                                                <rect key="frame" x="149" y="14" width="28" height="22"/>
                                                                 <state key="normal" image="Info"/>
                                                                 <connections>
                                                                     <action selector="heartInfo:" destination="lqp-Xq-Bf5" eventType="touchUpInside" id="FAk-iX-doI"/>
@@ -2142,19 +2517,19 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4u8-x1-vZA" userLabel="CardView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="112" width="383" height="88"/>
+                                                <rect key="frame" x="16" y="112" width="383" height="89"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1Z-tI-rwq">
-                                                        <rect key="frame" x="103" y="22" width="247" height="40"/>
+                                                        <rect key="frame" x="103" y="22" width="247" height="41"/>
                                                         <fontDescription key="fontDescription" name="GothamPro-Bold" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="8Wl-KP-s92">
-                                                        <rect key="frame" x="358" y="35" width="9" height="15"/>
+                                                        <rect key="frame" x="358" y="35" width="9" height="16"/>
                                                     </imageView>
                                                     <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVk-oz-3Ad">
-                                                        <rect key="frame" x="16" y="12" width="64" height="64"/>
+                                                        <rect key="frame" x="16" y="12" width="64" height="65"/>
                                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="64" id="yDb-vb-ErJ"/>
@@ -2177,7 +2552,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMy-4C-Z4k" userLabel="CalendarView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="216" width="383" height="88"/>
+                                                <rect key="frame" x="16" y="217" width="383" height="88"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fX-YZ-hXt">
                                                         <rect key="frame" x="103" y="22" width="247" height="44"/>
@@ -2742,6 +3117,77 @@
             </objects>
             <point key="canvasLocation" x="4557" y="-679"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FNZ-dY-6FE">
+            <objects>
+                <navigationController id="5IL-Su-FVW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="at7-LF-dTX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8Eh-s3-yLZ" kind="relationship" relationship="rootViewController" id="Z5h-P9-eBh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ua3-1d-WT6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4557" y="2392"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="Q5j-Lf-BPc">
+            <objects>
+                <viewController id="8Eh-s3-yLZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0sv-er-llb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ve-eE-NFg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ecu-4O-WOW">
+                                        <rect key="frame" x="0.0" y="0.0" width="406" height="68"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgT-hD-U4c" customClass="BraseletsView">
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="68"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="nIw-GG-BWb"/>
+                                            <constraint firstAttribute="width" constant="406" id="qrs-o4-GhY"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ecu-4O-WOW" secondAttribute="bottom" constant="740" id="60v-Gs-oT7"/>
+                                    <constraint firstAttribute="trailing" secondItem="ecu-4O-WOW" secondAttribute="trailing" constant="8" id="cQW-hz-nsU"/>
+                                    <constraint firstItem="ecu-4O-WOW" firstAttribute="top" secondItem="6Ve-eE-NFg" secondAttribute="top" id="jBx-U8-7hv"/>
+                                    <constraint firstItem="ecu-4O-WOW" firstAttribute="leading" secondItem="6Ve-eE-NFg" secondAttribute="leading" id="qpN-iR-YFh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Ve-eE-NFg" firstAttribute="leading" secondItem="WsK-3F-SiO" secondAttribute="leading" id="8mK-dH-YhN"/>
+                            <constraint firstItem="6Ve-eE-NFg" firstAttribute="trailing" secondItem="WsK-3F-SiO" secondAttribute="trailing" id="Das-Pj-sfd"/>
+                            <constraint firstItem="WsK-3F-SiO" firstAttribute="bottom" secondItem="6Ve-eE-NFg" secondAttribute="bottom" constant="-34" id="Sj8-UH-QqD"/>
+                            <constraint firstItem="6Ve-eE-NFg" firstAttribute="top" secondItem="WsK-3F-SiO" secondAttribute="top" id="Vz6-XY-iLt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WsK-3F-SiO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="EgY-7J-S4q">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Close" id="qO5-F8-EhD">
+                            <color key="tintColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Connected" id="kVt-Hh-QdC">
+                            <color key="tintColor" red="0.070588235289999995" green="0.84705882349999995" blue="0.6588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1tH-PO-huX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5424.6376811594209" y="2391.9642857142858"/>
+        </scene>
         <!--Настройки приложения-->
         <scene sceneID="fqd-Y0-STQ">
             <objects>
@@ -2754,16 +3200,16 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rO-lF-czA">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="570"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="578"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZL-F2-6pr" userLabel="DoctorView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="16" width="383" height="55"/>
+                                                <rect key="frame" x="16" y="16" width="383" height="56"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="VE8-Xu-kAh">
-                                                        <rect key="frame" x="358" y="20" width="9" height="15"/>
+                                                        <rect key="frame" x="358" y="20" width="9" height="16"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбор и открытие планов" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJO-5g-RaM">
-                                                        <rect key="frame" x="16" y="11" width="334" height="34"/>
+                                                        <rect key="frame" x="16" y="11" width="334" height="35"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2782,13 +3228,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cK6-Q2-EGI" userLabel="DoctorView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="87" width="383" height="55"/>
+                                                <rect key="frame" x="16" y="88" width="383" height="56"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="uhI-Lj-e2O">
-                                                        <rect key="frame" x="358" y="20" width="9" height="15"/>
+                                                        <rect key="frame" x="358" y="20" width="9" height="16"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выбор оформления" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLI-dN-fWU">
-                                                        <rect key="frame" x="16" y="11" width="334" height="34"/>
+                                                        <rect key="frame" x="16" y="11" width="334" height="35"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2807,13 +3253,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAc-gq-jAi" userLabel="DoctorView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="158" width="383" height="55"/>
+                                                <rect key="frame" x="16" y="160" width="383" height="56"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="jxE-y6-LMv">
-                                                        <rect key="frame" x="358" y="20" width="9" height="15"/>
+                                                        <rect key="frame" x="358" y="20" width="9" height="16"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Инструкция по использованию" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALe-Cx-ZjR">
-                                                        <rect key="frame" x="16" y="11" width="334" height="34"/>
+                                                        <rect key="frame" x="16" y="11" width="334" height="35"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -2832,19 +3278,19 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTb-ye-g55" userLabel="DoctorView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="229" width="383" height="55"/>
+                                                <rect key="frame" x="16" y="232" width="383" height="56"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="JrP-hf-rMT">
-                                                        <rect key="frame" x="358" y="20" width="9" height="15"/>
+                                                        <rect key="frame" x="358" y="20" width="9" height="16"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройка темы" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgT-cy-Zqx">
-                                                        <rect key="frame" x="16" y="11" width="334" height="34"/>
+                                                        <rect key="frame" x="16" y="11" width="334" height="35"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8H-wk-go7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="56"/>
                                                         <connections>
                                                             <segue destination="QIs-ce-wDy" kind="show" id="aYk-Sh-sD0"/>
                                                         </connections>
@@ -2867,19 +3313,19 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDp-uU-kae" userLabel="DoctorView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="300" width="383" height="55"/>
+                                                <rect key="frame" x="16" y="304" width="383" height="56"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="okl-ju-Ff1">
-                                                        <rect key="frame" x="358" y="20" width="9" height="15"/>
+                                                        <rect key="frame" x="358" y="20" width="9" height="16"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Связь с техподдржкой" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7Z-Ll-tv8">
-                                                        <rect key="frame" x="16" y="11" width="334" height="34"/>
+                                                        <rect key="frame" x="16" y="11" width="334" height="35"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iU0-q2-C4E">
-                                                        <rect key="frame" x="0.0" y="0.0" width="383" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="383" height="56"/>
                                                         <connections>
                                                             <segue destination="hEU-mP-KYU" kind="show" id="n6J-2s-6xn"/>
                                                         </connections>
@@ -2902,19 +3348,19 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ui3-iH-XHc" userLabel="DoctorView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="371" width="383" height="55"/>
+                                                <rect key="frame" x="16" y="376" width="383" height="56"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Fgs-Mw-zjc">
-                                                        <rect key="frame" x="358" y="20" width="9" height="15"/>
+                                                        <rect key="frame" x="358" y="20" width="9" height="16"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройка мониторинга здоровья" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHa-Fn-NJR">
-                                                        <rect key="frame" x="16" y="11" width="334" height="34"/>
+                                                        <rect key="frame" x="16" y="11" width="334" height="35"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="446-AR-Zpy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="383" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="383" height="56"/>
                                                         <connections>
                                                             <segue destination="kpV-2r-a43" kind="show" id="Ln4-Of-4c7"/>
                                                         </connections>
@@ -2937,19 +3383,19 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tT9-3W-bge" userLabel="DoctorView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="442" width="383" height="55"/>
+                                                <rect key="frame" x="16" y="448" width="383" height="56"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="SNV-LD-Hst">
-                                                        <rect key="frame" x="358" y="20" width="9" height="15"/>
+                                                        <rect key="frame" x="358" y="20" width="9" height="16"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройка помощи" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfB-nt-bCd">
-                                                        <rect key="frame" x="16" y="11" width="334" height="34"/>
+                                                        <rect key="frame" x="16" y="11" width="334" height="35"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0n9-lE-Q8w">
-                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="358" height="56"/>
                                                         <connections>
                                                             <segue destination="TXz-93-unA" kind="show" id="dcg-4j-G3Y"/>
                                                         </connections>
@@ -2972,13 +3418,13 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3m-8v-4sJ" userLabel="DoctorView" customClass="ButtonView" customModule="Health2_0" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="513" width="383" height="55"/>
+                                                <rect key="frame" x="16" y="520" width="383" height="56"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="lX6-vh-CHD">
-                                                        <rect key="frame" x="358" y="20" width="9" height="15"/>
+                                                        <rect key="frame" x="358" y="20" width="9" height="16"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройка доверенной группы" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAb-HZ-Y6O">
-                                                        <rect key="frame" x="16" y="11" width="334" height="34"/>
+                                                        <rect key="frame" x="16" y="11" width="334" height="35"/>
                                                         <fontDescription key="fontDescription" name="GothamPro" family="Gotham Pro" pointSize="17"/>
                                                         <color key="textColor" red="0.20392156859999999" green="0.2274509804" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -3688,7 +4134,7 @@
                                         <color key="onTintColor" red="1" green="0.32156862749999998" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCy-aL-W8L">
-                                        <rect key="frame" x="183.66666666666666" y="54.666666666666686" width="15" height="22"/>
+                                        <rect key="frame" x="183" y="54.666666666666686" width="16" height="22"/>
                                         <state key="normal" image="ArrowUp"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Каждые 3 часа" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifv-gx-4uQ">
@@ -3698,7 +4144,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brk-Wg-Ixn">
-                                        <rect key="frame" x="183.66666666666666" y="129.66666666666669" width="15" height="22"/>
+                                        <rect key="frame" x="183" y="129.66666666666669" width="16" height="22"/>
                                         <state key="normal" image="ArrowDown"/>
                                     </button>
                                 </subviews>
@@ -5425,7 +5871,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCy-FR-0iW">
-                                                <rect key="frame" x="236" y="8" width="28" height="28"/>
+                                                <rect key="frame" x="248" y="8" width="16" height="22"/>
                                                 <state key="normal" image="Close"/>
                                                 <connections>
                                                     <action selector="close:" destination="t3H-QV-EPv" eventType="touchUpInside" id="jOX-qz-IcU"/>
@@ -5483,6 +5929,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Add" width="28" height="28"/>
         <image name="Arrow" width="9" height="15"/>
         <image name="Arrow Left" width="28" height="28"/>
         <image name="ArrowDown" width="15" height="9"/>

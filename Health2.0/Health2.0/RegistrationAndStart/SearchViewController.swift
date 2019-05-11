@@ -81,4 +81,6 @@ class SearchViewController: UIViewController {
         pulseArray[index].add(groupAnimation, forKey: "groupanimation")
         
     }
+    
+    
 }

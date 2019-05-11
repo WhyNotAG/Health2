@@ -103,9 +103,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
        textField.layer.borderColor = UIColor.darkGray.cgColor
     }
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        activeTextField = textField
-    }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

@@ -29,9 +29,16 @@
 		EE61CDC522560EF90068726C /* InfoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE61CDC422560EF90068726C /* InfoSlider.swift */; };
 		EE6B98EF2257591E009977EF /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B98EE2257591E009977EF /* SlideViewController.swift */; };
 		EE9167AD226A0B8F0000A2EB /* HandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9167AC226A0B8F0000A2EB /* HandViewController.swift */; };
+		EE9CCB46226F24B100602C34 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CCB45226F24B100602C34 /* CalendarViewController.swift */; };
+		EE9CCB48226F340000602C34 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CCB47226F340000602C34 /* CalendarView.swift */; };
+		EE9CCB4A226F38C900602C34 /* AddCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CCB49226F38C900602C34 /* AddCourseViewController.swift */; };
+		EE9CCB4E227313C300602C34 /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CCB4D227313C300602C34 /* TimeView.swift */; };
+		EE9CCB522273154600602C34 /* TimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE9CCB512273154600602C34 /* TimeView.xib */; };
 		EEAD812F225B6B6400726629 /* ConsultationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD812E225B6B6400726629 /* ConsultationViewController.swift */; };
 		EEAD8134225CBA0000726629 /* CustomSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8133225CBA0000726629 /* CustomSegue.swift */; };
 		EEAD8138225CF7EB00726629 /* BandSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAD8137225CF7EB00726629 /* BandSettingsViewController.swift */; };
+		EEC01B402273516D0085CF29 /* BraseletsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC01B3F2273516D0085CF29 /* BraseletsView.swift */; };
+		EEC01B422273518A0085CF29 /* BraseletsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC01B412273518A0085CF29 /* BraseletsView.xib */; };
 		EECFEC882264912C00833163 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECFEC872264912C00833163 /* EnterViewController.swift */; };
 		EECFEC8A2264B53800833163 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECFEC892264B53800833163 /* ProfilePresenter.swift */; };
 		EECFEC8C2264CC1D00833163 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECFEC8B2264CC1D00833163 /* Protocols.swift */; };
@@ -107,9 +114,16 @@
 		EE61CDC422560EF90068726C /* InfoSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSlider.swift; sourceTree = "<group>"; };
 		EE6B98EE2257591E009977EF /* SlideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 		EE9167AC226A0B8F0000A2EB /* HandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandViewController.swift; sourceTree = "<group>"; };
+		EE9CCB45226F24B100602C34 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		EE9CCB47226F340000602C34 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		EE9CCB49226F38C900602C34 /* AddCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCourseViewController.swift; sourceTree = "<group>"; };
+		EE9CCB4D227313C300602C34 /* TimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
+		EE9CCB512273154600602C34 /* TimeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeView.xib; sourceTree = "<group>"; };
 		EEAD812E225B6B6400726629 /* ConsultationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultationViewController.swift; sourceTree = "<group>"; };
 		EEAD8133225CBA0000726629 /* CustomSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegue.swift; sourceTree = "<group>"; };
 		EEAD8137225CF7EB00726629 /* BandSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandSettingsViewController.swift; sourceTree = "<group>"; };
+		EEC01B3F2273516D0085CF29 /* BraseletsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraseletsView.swift; sourceTree = "<group>"; };
+		EEC01B412273518A0085CF29 /* BraseletsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BraseletsView.xib; sourceTree = "<group>"; };
 		EECFEC872264912C00833163 /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
 		EECFEC892264B53800833163 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		EECFEC8B2264CC1D00833163 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
@@ -198,6 +212,7 @@
 		EE4394D22256008F00510A5D /* TrScreen */ = {
 			isa = PBXGroup;
 			children = (
+				EE9CCB44226F249E00602C34 /* Calendar */,
 				EE4394D3225600C600510A5D /* TrViewController.swift */,
 			);
 			path = TrScreen;
@@ -261,13 +276,33 @@
 		EE61CDC322560ECD0068726C /* CreatedElements */ = {
 			isa = PBXGroup;
 			children = (
+				EE9CCB4B2273135900602C34 /* Custom Views */,
 				EE4394DB22560A2600510A5D /* ButtonView.swift */,
 				EE61CDC422560EF90068726C /* InfoSlider.swift */,
 				EEAD8133225CBA0000726629 /* CustomSegue.swift */,
 				EEDD6A852260CC9B007D5994 /* CustomTextField.swift */,
 				EECFEC8F2265EAF400833163 /* CustomAlert.swift */,
+				EE9CCB47226F340000602C34 /* CalendarView.swift */,
 			);
 			path = CreatedElements;
+			sourceTree = "<group>";
+		};
+		EE9CCB44226F249E00602C34 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				EE9CCB45226F24B100602C34 /* CalendarViewController.swift */,
+				EE9CCB49226F38C900602C34 /* AddCourseViewController.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		EE9CCB4B2273135900602C34 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEC01B3E2273513A0085CF29 /* BraseletsView */,
+				EEC01B3D227350EF0085CF29 /* TimeView */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		EEAD8130225CA9A000726629 /* SlideBarSettings */ = {
@@ -280,6 +315,24 @@
 			);
 			name = SlideBarSettings;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		EEC01B3D227350EF0085CF29 /* TimeView */ = {
+			isa = PBXGroup;
+			children = (
+				EE9CCB4D227313C300602C34 /* TimeView.swift */,
+				EE9CCB512273154600602C34 /* TimeView.xib */,
+			);
+			path = TimeView;
+			sourceTree = "<group>";
+		};
+		EEC01B3E2273513A0085CF29 /* BraseletsView */ = {
+			isa = PBXGroup;
+			children = (
+				EEC01B3F2273516D0085CF29 /* BraseletsView.swift */,
+				EEC01B412273518A0085CF29 /* BraseletsView.xib */,
+			);
+			path = BraseletsView;
 			sourceTree = "<group>";
 		};
 		EECFEC9122661A0500833163 /* MVP */ = {
@@ -512,9 +565,11 @@
 				EEDD6A79225F9C3E007D5994 /* Notification.svg in Resources */,
 				EEDD6A77225F9C2D007D5994 /* Message.svg in Resources */,
 				EEDD6A53225F6C92007D5994 /* Vibration.svg in Resources */,
+				EE9CCB522273154600602C34 /* TimeView.xib in Resources */,
 				EEDD6A4F225F67DF007D5994 /* Calendar.svg in Resources */,
 				EEDD6A45225F4899007D5994 /* Sound.svg in Resources */,
 				EE51C104224E245400914EF2 /* Здоровье 2.0 Red.png in Resources */,
+				EEC01B422273518A0085CF29 /* BraseletsView.xib in Resources */,
 				EEDD6A55225F6CAD007D5994 /* Water.svg in Resources */,
 				EE51C0FC224E1A9A00914EF2 /* LaunchScreen.storyboard in Resources */,
 				EEDD6A3F225F4808007D5994 /* Support.svg in Resources */,
@@ -602,6 +657,7 @@
 				EEDD6A6E225F8EE3007D5994 /* ThemeSettingsViewController.swift in Sources */,
 				EEEC63492260E21500692DC9 /* SexMenuViewController.swift in Sources */,
 				EE3C2C92225B49A800A46B55 /* SWRevealViewController.m in Sources */,
+				EE9CCB46226F24B100602C34 /* CalendarViewController.swift in Sources */,
 				EE5CF16C22566837002AB3CC /* IndicateViewController.swift in Sources */,
 				EE4394D4225600C600510A5D /* TrViewController.swift in Sources */,
 				EE9167AD226A0B8F0000A2EB /* HandViewController.swift in Sources */,
@@ -610,13 +666,17 @@
 				EECFEC882264912C00833163 /* EnterViewController.swift in Sources */,
 				EE4394DC22560A2600510A5D /* ButtonView.swift in Sources */,
 				EEDD6A862260CC9B007D5994 /* CustomTextField.swift in Sources */,
+				EE9CCB48226F340000602C34 /* CalendarView.swift in Sources */,
+				EEC01B402273516D0085CF29 /* BraseletsView.swift in Sources */,
 				EEEC63462260CE5F00692DC9 /* ProfileViewController.swift in Sources */,
 				EE51C0F1224D348F00914EF2 /* SearchViewController.swift in Sources */,
 				EE51C0DB224CF58200914EF2 /* ViewController.swift in Sources */,
 				EECFEC8C2264CC1D00833163 /* Protocols.swift in Sources */,
+				EE9CCB4E227313C300602C34 /* TimeView.swift in Sources */,
 				EECFEC8E2264DD3300833163 /* Model.swift in Sources */,
 				EE51C0D9224CF58200914EF2 /* AppDelegate.swift in Sources */,
 				EEAD812F225B6B6400726629 /* ConsultationViewController.swift in Sources */,
+				EE9CCB4A226F38C900602C34 /* AddCourseViewController.swift in Sources */,
 				EEDD6A7C22608DD7007D5994 /* MonitorngViewController.swift in Sources */,
 				EE0942432264845B00F119B8 /* Profile.swift in Sources */,
 				EEDD6A70225F9AF0007D5994 /* HelpSettingsViewController.swift in Sources */,
